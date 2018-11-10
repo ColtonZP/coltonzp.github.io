@@ -1,0 +1,144 @@
+@font-face{
+    font-family: Gotham-Rounded;
+    src: url(../font-families/gotham-rounded/GothamRoundedMedium_21022.ttf);
+}
+
+* {
+    font-family: Gotham-Rounded;
+    color: #000;
+}
+
+html {
+    background: linear-gradient(#0CF, #FC7502) no-repeat;
+}
+
+.card {
+    background-color: #FFF;
+    border-radius: 5px;
+    margin: 10px 10px;
+}
+
+.profilePic {
+    border-radius: 5px;
+    margin: 10px 10px;
+    float: left;
+}
+
+h1, h2, h3, h4, p, small {
+    margin: 0;
+    padding: 10px;
+}
+
+.columns {
+    padding-top: 40px;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+nav {
+    width: 100%;
+    height: 40px;
+    background: #FFF;
+    position: fixed;
+    top: 0;
+    border-radius: 0 0 5px 5px;
+    box-shadow: 0 0 25px #000;
+}
+
+nav ul {
+    justify-content: space-between;
+}
+
+nav ul li {
+    margin-top: 10px;
+}
+
+ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+    margin: 0;
+    padding: 0 10%;
+}
+
+.websiteLinks img {
+    border-radius: 5px;
+    margin: 10px 10%;
+}
+
+#skills ul li {
+    width: 30%;
+    text-align: center;
+    margin: 5px 0;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.github, .linked_in {
+    padding: 10px;
+}
+
+.webPic1, .webPic2, .webPic3 {
+    width: 80%;
+    margin: 0;
+}
+
+@media screen and (min-width: 768px) {
+    .card {
+        background-color: #FFF;
+        border-radius: 5px;
+        margin: 10px 0;
+    }
+
+    .columns {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+     }
+
+    .container {
+        max-width: 1200px;
+        width: 80%;
+        margin: auto;
+    }
+
+    .column {
+        width: calc(50% - 5px);
+    }
+
+    .websiteLinks img{
+        float: left;
+    }
+
+    .webPic1, .webPic2, .webPic3 {
+        width: 50%;
+    }
+
+    .websiteLinks img {
+        border-radius: 5px;
+        margin: 5px 10px;
+    }
+    
+    .w3 .websiteLinks img {
+        margin-bottom: 10px;
+    }
+
+    nav ul {
+        justify-content: flex-end;
+    }
+
+    nav ul li {
+        padding-left: 30px;
+    }
+}
