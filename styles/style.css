@@ -20,8 +20,11 @@ html {
 
 .profilePic {
     border-radius: 5px;
-    margin: 10px 10px;
-    float: left;
+    margin: 10px calc(50% - 100px);
+}
+
+h1, .aboutMeHeader p {
+    text-align: center;
 }
 
 h1, h2, h3, h4, p, small {
@@ -65,7 +68,7 @@ ul {
     justify-content: space-between;
     align-content: space-between;
     margin: 0;
-    padding: 0 10%;
+    padding: 0;
 }
 
 .websiteLinks img {
@@ -101,6 +104,15 @@ ul {
         margin: 10px 0;
     }
 
+    h1, .aboutMeHeader p {
+        text-align: left;
+    }
+
+    .profilePic {
+        margin: 10px 10px;
+        float: left;
+    }
+
     .columns {
         display: flex;
         flex-wrap: nowrap;
@@ -132,6 +144,10 @@ ul {
     
     .w3 .websiteLinks img {
         margin-bottom: 10px;
+    }
+
+    ul {
+        padding: 0 10%;
     }
 
     nav ul {
