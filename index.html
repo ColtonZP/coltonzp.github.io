@@ -2,21 +2,24 @@
 
 <html>
 	<head>
+		<link rel="shortcut icon" type="image/x-icon" href="imgs/favicon.png">
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<link rel="stylesheet" href="styles/normalize.css">
-		<link rel="stylesheet" href="styles/style.css">
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Nunito:700,800" rel="stylesheet">
+		<link href="style.css" rel="stylesheet">
 		<title>Colton Pemberton</title>
-		
 	</head>
 	<body>
 		<div>
 			<header>
-				<nav>
-					<ul class="container">
-						<li><a href="#aboutMe">About me</a></li>
-						<li><a href="#skills">Skills</a></li>
-						<li><a href="#expo">Expo</a></li>
-						<li><a href="#workXP">Work Experience</a></li>
+				<button id="toggle"><?xml version="1.0" encoding="UTF-8" standalone="no"?>
+					<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid meet" viewBox="0 0 100 100" width="100%" height="100%"><defs><path d="M90 10C92.76 10 95 12.24 95 15C95 18 95 22 95 25C95 27.77 92.76 30 90 30C73 30 27 30 10 30C7.24 30 5 27.77 5 25C5 22 5 18 5 15C5 12.24 7.24 10 10 10C27 10 73 10 90 10Z" id="bbyAyhtzf"></path><path d="M90 40C92.76 40 95 42.24 95 45C95 48 95 52 95 55C95 57.76 92.76 60 90 60C73 60 27 60 10 60C7.24 60 5 57.76 5 55C5 52 5 48 5 45C5 42.24 7.24 40 10 40C27 40 73 40 90 40Z" id="a6Cc9UtzTP"></path><path d="M90 70C92.76 70 95 72.24 95 75C95 78 95 82 95 85C95 87.76 92.76 90 90 90C73 90 27 90 10 90C7.24 90 5 87.76 5 85C5 82 5 78 5 75C5 72.24 7.24 70 10 70C27 70 73 70 90 70Z" id="a1OYH9qctm"></path></defs><g><g><g><use xlink:href="#bbyAyhtzf" opacity="1" fill="#0CF" fill-opacity="1"></use></g><g><use xlink:href="#a6Cc9UtzTP" opacity="1" fill="#0CF" fill-opacity="1"></use></g><g><use xlink:href="#a1OYH9qctm" opacity="1" fill="#0CF" fill-opacity="1"></use></g></g></g></svg></button>
+				<nav id="navigation" class="closed">
+					<ul class="container" id="topMenu">
+						<li><a href="#aboutMe" id="aboutMeNave">About me</a></li>
+						<li><a href="#skills" id="skillsNav">Skills</a></li>
+						<li><a href="#workXP" id="workNav">Work Experience</a></li>
+						<li><a href="#portfolio" id="portfolioNav">Portfolio</a></li>
 					</ul>
 				</nav>
 			</header>
@@ -32,14 +35,16 @@
 							</div>
 							<h2>About me:</h2>
 							<p>
-								I am an ambitious web developer looking for a full stack or front end position. I've been learning code since I was a freshman in high-school.
-								 I started teaching myself Lua with a passion to make video games.
-								  Although I never completed a game I learned a lot about problem-solving with my code. I then learned Java my junior and senior year.
-								   I had little experience with web development in high school, but my passion was in video games.
-									I recently heard advertisements for Treehouse and ever since I started my free trial I started taking web development a lot more serious.
-									 Finding and fixing bugs in programmes is one of the most satisfying things in my life.
-									  I love making great looking web pages and making code (though it may be unseen) look just as great as my web pages are just as important to me.
-								       I love learning code and I'm prepared to learn anything necessary to get any web development job.
+								I am an ambitious web developer looking for a full stack or front end position.
+								I've been learning code since I was a freshman in high-school.
+								I started teaching myself Lua with a passion to make video games.
+								I learned a lot about problem-solving with my code.
+								I then learned Java my junior and senior year.
+								I had little experience with web development in high school, but my passion was in video games.
+								I more recently got serious about web development and have been learning everything there is to know with online courses.
+								Finding and fixing bugs in programmes is a very satisfying and relieving task I love taking on.
+								I love making great looking web pages,  and making code (though it may be unseen) look just as great as my web pages.
+								I love learning code and I'm prepared to learn anything necessary to get the job done.
 							</p>
 						</div>
 						<div id="social" class="card">
@@ -58,8 +63,12 @@
 						<div id="skills" class="card">
 							<h2>Skills:</h2>
 							<ul>
-								<li>Javascript</li>
+								<li>JavaScript</li>
+								<li>React</li>
+								<li>Redux</li>
 								<li>jQuery</li>
+								<li>JSON</li>
+								<li>AJAX</li>
 								<li>HTML</li>
 								<li>CSS</li>
 								<li>Bootstrap</li>
@@ -70,41 +79,13 @@
 								<li>Photoshop</li>
 							</ul>
 						</div>
-					</div>
-					<div class="column">
-						<div id="expo" class="card">
-							<h2>Expo:</h2>
-							<div class="Website w1">
-								<a class="websiteLinks clearfix" href="https://coltonzp.github.io/legacyhome/" >
-									<img class="webPic1" src="imgs/legacyWebsite.jpg" alt="">
-									<h3>Legacy home page</h3>
-									<p>This is a look at the first time I made this home.
-										It's still a great looking page, however I had a better idea and I wanted to start from scratch to practice my skills.
-									</p>
-								</a>
-							</div>
-							<div class="Website w2">
-								<a class="websiteLinks clearfix" href="" >
-									<img class="webPic2" src="imgs/till.jpg" alt="">
-									<h3>Till Calculator</h3>
-									<p>I have made a till calculator to make counting money at work eaier, aswell as giving myself a Javascript assignment.</p>
-								</a>
-							</div>
-							<div class="Website w3">
-								<a class="websiteLinks clearfix" href="" >
-									<img class="webPic2" src="https://placeimg.com/300/200/tech" alt="">
-									<h3>Website 3</h3>
-									<p>Website description will go here.</p>
-								</a>
-							</div>
-						</div>
 						<div id="workXP" class="card clearfix">
 							<h2>Work Experience:</h2>
 							<h4>Supervisor, Phantomb Games</h4>
 							<small>June 2018-current</small>
 							<p>
 								At Phantomb Games I sell comics, collectables, board games and video games on a daily basis.
-								I manage employees to make sure spacific tasks get done. 
+								I manage employees to make sure specific tasks get done. 
 								Perform closing duties.
 							</p>
 							<h4>Supervisor, Motel 6</h4>
@@ -132,13 +113,41 @@
 								In charge of money deposits. 
 							</p>
 						</div>
+					</div>
+					<div class="column">
+						<div id="portfolio" class="card">
+							<h2>Portfolio:</h2>
+							<div class="Website w1">
+								<a class="websiteLinks clearfix" href="https://coltonzp.github.io/legacyhome/" >
+									<img class="webPic1" src="imgs/legacyWebsite.jpg" alt="">
+									<h3>Legacy home page</h3>
+									<p>This is a look at the first time I made this home.
+										It's still a great looking page, however I had a better idea and I wanted to start from scratch to practice my skills.
+									</p>
+								</a>
+							</div>
+							<div class="Website w2">
+								<a class="websiteLinks clearfix" href="" >
+									<img class="webPic2" src="imgs/till.jpg" alt="">
+									<h3>Till Calculator</h3>
+									<p>I have made a till calculator to make counting money at work eaier, aswell as giving myself a Javascript assignment.</p>
+								</a>
+							</div>
+							<div class="Website w3">
+								<a class="websiteLinks clearfix" href="" >
+									<img class="webPic2" src="https://placeimg.com/300/200/tech" alt="">
+									<h3>Website 3</h3>
+									<p>Website description will go here.</p>
+								</a>
+							</div>
+						</div>
 					</div>	
 				</div>
 			</main>
-
 			<footer>
+				Site made by Colton Pemberton, 2018
 			</footer>
-
-		</div>		
+		</div>
+		<script src="main.js"></script>
 	</body>
 <html>
