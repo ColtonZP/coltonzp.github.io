@@ -10,7 +10,7 @@ html {
 .card {
     background-color: #FFF;
     border-radius: 5px;
-    margin: 10px 10px;
+    margin: 10px;
 }
 
 .profilePic {
@@ -29,6 +29,10 @@ h1, h2, h3, h4, p, small {
 
 h1, h2, h4 {
     font-weight: 800;
+}
+
+.hamburger {
+    margin-right: 50px;
 }
 
 .columns {
@@ -67,10 +71,10 @@ nav {
 
 #toggle {
     position: fixed;
-    right: 0px;
+    right: 5px;
     z-index: 2;
     background-color: transparent;
-    width: 40px;
+    border: none;
     height: 40px;
 }
 
@@ -80,6 +84,7 @@ footer {
     border-radius: 5px 5px 0 0;
     text-align: center;
     box-shadow: 0 0 25px #000;
+    margin-top: 10px;
 }
 
 nav ul a{
@@ -90,7 +95,7 @@ nav ul a{
 }
 
 nav ul li {
-    margin: 10px 0px 10px 10px;
+    margin: 10px;
 }
 
 ul {
@@ -134,14 +139,6 @@ ul {
     margin: 0;
 }
 
-button{
-    margin-bottom: 10px;
-    border: none;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-
 @media screen and (min-width: 768px) {
     #toggle {
         display: none;
@@ -150,7 +147,7 @@ button{
     .card {
         background-color: #FFF;
         border-radius: 5px;
-        margin: 10px 0;
+        margin: 20px 0;
     }
 
     h1, .aboutMeHeader p {
@@ -158,7 +155,7 @@ button{
     }
 
     .profilePic {
-        margin: 10px 10px;
+        margin: 10px;
         float: left;
     }
 
@@ -175,7 +172,8 @@ button{
     }
 
     .column {
-        width: calc(50% - 5px);
+        width: 50%;
+        margin: 0 10px 0 10px;
     }
 
     .websiteLinks img{
