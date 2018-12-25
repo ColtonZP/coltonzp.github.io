@@ -134,7 +134,7 @@ ul {
     padding: 10px;
 }
 
-.webPic1, .webPic2, .webPic3 {
+.webPic {
     width: 80%;
     margin: 0;
 }
@@ -181,7 +181,7 @@ ul {
         float: left;
     }
 
-    .webPic1, .webPic2, .webPic3 {
+    .webPic {
         width: 50%;
     }
 
