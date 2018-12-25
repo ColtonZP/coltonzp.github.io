@@ -112,6 +112,8 @@ ul {
 .websiteLinks img {
     border-radius: 5px;
     margin: 10px 10%;
+    width: 80%;
+    margin: 0;
 }
 
 #skills ul li {
@@ -132,11 +134,6 @@ ul {
 
 .github, .linked_in {
     padding: 10px;
-}
-
-.webPic {
-    width: 80%;
-    margin: 0;
 }
 
 @media screen and (min-width: 768px) {
@@ -179,9 +176,6 @@ ul {
 
     .websiteLinks img{
         float: left;
-    }
-
-    .webPic {
         width: 50%;
     }
 
