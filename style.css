@@ -17,8 +17,8 @@ html {
 .profilePic {
     display: block;
     border-radius: 5px;
-    margin: 5px auto 0;
     width: 30%;
+    margin: 0 auto;
 }
 
 h1, .aboutMeHeader p {
