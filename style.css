@@ -5,6 +5,7 @@
 
 html {
     background: linear-gradient(#0CF, #FC7502) no-repeat;
+    scroll-behavior: smooth;
 }
 
 .card {
