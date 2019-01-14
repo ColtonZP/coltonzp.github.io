@@ -22,16 +22,24 @@ html {
     margin: 10px auto;
 }
 
-h1, .aboutMeHeader p {
+h1,
+.aboutMeHeader p {
     text-align: center;
 }
 
-h1, h2, h3, h4, p, small {
+h1,
+h2,
+h3,
+h4,
+p,
+small {
     margin: 0;
     padding: 10px;
 }
 
-h1, h2, h4 {
+h1,
+h2,
+h4 {
     font-weight: 800;
 }
 
@@ -56,7 +64,7 @@ nav {
     position: fixed;
     top: 0;
     border-radius: 0 0 5px 5px;
-    box-shadow: 0 0 25px #000; 
+    box-shadow: 0 0 25px #000;
 }
 
 .open {
@@ -91,7 +99,7 @@ footer {
     margin-top: 10px;
 }
 
-nav ul a{
+nav ul a {
     color: #FFF;
     background-color: #0CF;
     border-radius: 5px;
@@ -137,7 +145,8 @@ ul {
     display: table;
 }
 
-.github, .linked_in {
+.github,
+.linked_in {
     padding: 10px;
 }
 
@@ -157,7 +166,8 @@ b {
         margin: 20px 0;
     }
 
-    h1, .aboutMeHeader p {
+    h1,
+    .aboutMeHeader p {
         text-align: left;
     }
 
@@ -171,7 +181,7 @@ b {
         display: flex;
         flex-wrap: nowrap;
         justify-content: space-between;
-     }
+    }
 
     .container {
         max-width: 1200px;
@@ -184,7 +194,7 @@ b {
         margin: 0 10px 0 10px;
     }
 
-    .websiteLinks img{
+    .websiteLinks img {
         float: left;
         width: 50%;
     }
