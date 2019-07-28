@@ -1,0 +1,387 @@
+$primaryColor: #4900AB;
+$secondaryColor: #FC8100;
+$primaryAccent: #00779E;
+$background: #1C1E26;
+
+* {
+  font-family: 'Maven Pro', sans-serif;;
+  font-display: auto;
+  font-size: 24px;
+  @media screen and (max-width: 768px) {
+    font-size: 16px;
+  }
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  color: white;
+  background: #1C1E26;
+}
+
+
+.jumbotron {
+  margin-top: 2vh;
+  white-space: nowrap;
+  @media screen and (min-width: 768px) {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+  & .code {
+    grid-column: span 3;
+    z-index: 2;
+    & * {
+      font-size: 18px;
+      line-height: 18px;
+      margin: .5vh 0;
+      @media screen and (min-width: 768px) {
+        font-size: 36px;
+        line-height: 36px;
+      }
+      @media screen and (min-width: 1300px) {
+        font-size: 48px;
+        line-height: 48px;
+      }
+    }
+    & span {
+      display: inline-block;
+      color: $primaryAccent;
+    }
+    & .typeCursor {
+      color: white;
+      animation: fade 2s ease-in-out infinite;
+    }
+  }
+  & .bg {
+    position: absolute;
+    z-index: -1;
+    height: 60vh;
+    right: 0;
+    top: 0;
+  }
+  & .planet {
+    @media screen and (max-width: 768px) {
+      display: none;
+    }
+    width: 15vh;
+    height: 15vh;
+    border-radius: 50%;
+    position: relative;
+    background: url("imgs/planet.svg") center/cover;
+    margin: 0 auto;
+    &::after {
+      content: '';
+      position: absolute;
+      width: 20%;
+      height: 20%;
+      background: url("imgs/moon.svg");
+      border-radius: 50%;
+      animation: revolve 20s ease-in-out infinite;
+    }
+  }
+}
+
+.projects {
+  margin-top: 2vh;
+  width: 100%;
+  border: $primaryColor solid 2px;
+  border-radius: 5px;
+  background-color: rgba($primaryColor, .5);
+  @media screen and (min-width: 768px) {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    height: 60vh;
+  }
+  & .list {
+    @media screen and (min-width: 768px) {
+      height: calc(60vh - 4px);
+      border-right: $primaryColor solid 2px;
+    }
+    grid-column: span 2;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-content: flex-start;
+    overflow-y: scroll;
+    &::-webkit-scrollbar { width: 0 !important }
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    & .website {
+      width: 45%;
+      position: relative;
+      overflow: auto;
+      border-radius: 5px;
+      margin: 2.5%;
+      height: max-content;
+      & img {
+        display: block;
+        margin: 0 auto;
+        width: 100%;
+        pointer-events: none;
+      }
+      & .overlay {
+        top: 0;
+        left: 0;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: $primaryAccent;
+        z-index: 2;
+        opacity: 0;
+        transition: all .3s ease-in;
+        pointer-events: none;
+      }
+      & span {
+        display: inline-flex;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        z-index: 3;
+        top: -50px;
+        width: 100%;
+        height: 100%;
+        font-size: 24px;
+        opacity: 0;
+        transition: all .3s ease-in;
+        pointer-events: none;
+      }
+      &:hover {
+        cursor: pointer;
+        & .overlay {
+          opacity: 1;
+        }
+        & span {
+          opacity: 1;
+          top: 0;
+        }
+      }
+    }
+  }
+  & .description {
+    grid-column: span 3;
+    &::-webkit-scrollbar { width: 0 !important }
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    position: relative;
+    overflow-y: scroll;
+    & .content {
+      padding: 0 10%;
+      margin: 0 auto;
+      width: 100%;
+      top: 0;
+      transition: all .3s ease;
+      @media screen and (min-width: 768px) {
+        position: absolute;
+      }
+    }
+    & h1 {
+      text-align: center;
+      font-size: 36px;
+      margin: 5px 0;
+      @media screen and (max-width: 768px) {
+        font-size: 24px;
+      }
+    }
+    & img {
+      display: block;
+      margin: 2% auto 0 auto;
+      width: 80%;
+      border-radius: 5px;
+    }
+    & p {
+      margin: 5px;
+      text-align: center;
+    }
+    & .buttons {
+      text-align: center;
+      margin-bottom: 16px;
+      outline: none;
+    }
+    & a {
+      display: inline-block;
+      background: transparent;
+      box-sizing: border-box;
+      border: $secondaryColor solid 2px;
+      border-radius: 5px;
+      padding: 0 5px;
+      font-size: 16px;
+      line-height: 20px;
+      transition: all .3s ease-in-out;
+      & svg {
+        fill: $secondaryColor;
+        vertical-align: middle;
+        transition: all .3s ease-in-out;
+      }
+      &:hover {
+        background-color: $secondaryColor;
+        color: $primaryColor;
+        cursor: pointer;
+        & svg {
+          fill: $primaryColor;
+        }
+      }
+    }
+  }
+}
+
+.resume {
+  transition: opacity .3s ease-in-out;
+  top: 0;
+  left: 0;
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  background: rgba($background, .5);
+  overflow-y: scroll;
+  z-index: 3;
+  & .content {
+    transition: top .3s ease-in-out;
+    position: relative;
+    top: -100%;
+    margin: 2vh auto;
+    padding: 10px 100px;
+    background: white;
+    width: 100%;
+    border-radius: 5px;
+    color: black;
+    box-shadow: 0px 0px 20px 5px rgba(0,0,0,0.75);
+    @media screen and (min-width: 768px) {
+      max-width: 1300px;
+      width: 80%;
+    }
+    & * {
+      padding: 0;
+    }
+    & button {
+      background: url(imgs/close.svg) center/cover;
+      cursor: pointer;
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      right: 10px;
+      top: 10px;
+      border: none;
+      outline: none;
+    }
+    & .title {
+      text-align: center;
+    }
+    & h2 {
+      color: $primaryAccent;
+    }
+    & h4 {
+      margin: 0;
+    }
+    & .skillsUl {
+      display: flex;
+      flex-wrap: wrap;
+      & li {
+        width: 33%;
+        padding: 0;
+        &:nth-child(3n + 2) {
+          text-align: center;
+        }
+        &:nth-child(3n + 3) {
+          text-align: right;
+        }
+      }
+    }
+    & li {
+      margin: 10px 0;
+      list-style: none;
+    }
+    & small{
+      font-size: 16px;
+    }
+    & a {
+      display: block;
+      text-align: center;
+    }
+  }
+}
+
+a {
+  color: $secondaryColor;
+  text-decoration: none;
+}
+
+.links {
+  margin-top: 1vh;
+  width: 100%;
+  color: $secondaryColor;
+  text-align: center;
+  display: inline-flex;
+  justify-content: space-evenly;
+  & .linkSvg, a {
+    width: 4vh;
+    height: 4vh;
+  }
+  & a {
+    position: relative;
+    & span {
+      transition: all .15s linear;
+      font-size: 16px;
+      display: inline-block;
+      position: absolute;
+      transform: translateX(-50%);
+      top: 60%;
+      opacity: 0;
+    }
+    &:hover {
+      & span {
+        top: 100%;
+        opacity: 1;
+      }
+    }
+  }
+}
+
+.container {
+  width: 90%;
+  margin: auto;
+  @media screen and (min-width: 768px) {
+    max-width: 1300px;
+    width: 80%;
+  }
+}
+
+.hidden {
+  pointer-events: none;
+  opacity: 0;
+}
+
+@keyframes revolve {
+  0%{
+    left: -20%;
+    top: 0%;
+  }
+
+  25% {
+    width: 30%;
+    height: 30%;
+  }
+
+  50% {
+    left: 110%;
+    top: 70%;
+    width: 20%;
+    height: 20%;
+  }
+
+  100% {
+    left: -20%;
+    z-index: -1;
+    top: 0%;
+  }
+}
+
+@keyframes fade {
+  0%, 100% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 100;
+  }
+}

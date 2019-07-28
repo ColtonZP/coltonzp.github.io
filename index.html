@@ -1,127 +1,146 @@
 <!doctype html>
 
-<html>
+<html lang="en">
 
 <head>
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-131932568-1"></script>
 	<script>window.dataLayer = window.dataLayer || []; function gtag() { dataLayer.push(arguments); } gtag('js', new Date()); gtag('config', 'UA-131932568-1');</script>
 	<script>(function (w, d, s, l, i) { w[l] = w[l] || []; w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' }); var f = d.getElementsByTagName(s)[0], j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f); })(window, document, 'script', 'dataLayer', 'GTM-5MNZJQZ');</script>
-	<link rel="shortcut icon" type="image/x-icon" href="imgs/favicon.png">
+	<link href="https://fonts.googleapis.com/css?family=Maven+Pro:700&display=swap" rel="stylesheet">
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
-	<link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Nunito:700,800" rel="stylesheet">
-	<link href="style.css" rel="stylesheet">
-	<title>Colton Pemberton</title>
+	<meta name="Description" content="Colton's front end web development portfolio.">
+	<link rel="stylesheet" href="stylesheets.css">
+	<title>Colton's Portfolio</title>
 </head>
 
 <body>
-	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5MNZJQZ" height="0" width="0"
-			style="display:none;visibility:hidden"></iframe></noscript>
+	<svg xmlns="http://www.w3.org/2000/svg" style="display: none">
+		<symbol id="git" viewbox="0 0 24 24">
+			<path style="fill:#FC8100"
+				d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+		</symbol>
+		<symbol id="in" viewbox="0 0 24 24">
+			<path style="fill:#FC8100"
+				d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-2 16h-2v-6h2v6zm-1-6.891c-.607 0-1.1-.496-1.1-1.109 0-.612.492-1.109 1.1-1.109s1.1.497 1.1 1.109c0 .613-.493 1.109-1.1 1.109zm8 6.891h-1.998v-2.861c0-1.881-2.002-1.722-2.002 0v2.861h-2v-6h2v1.093c.872-1.616 4-1.736 4 1.548v3.359z" />
+		</symbol>
+		<symbol id="mail" viewbox="0 0 24 24">
+			<path style="fill:#FC8100"
+				d="M12 .02c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6.99 6.98l-6.99 5.666-6.991-5.666h13.981zm.01 10h-14v-8.505l7 5.673 7-5.672v8.504z" />
+		</symbol>
+		<symbol id="res" viewbox="0 0 24 24">
+			<rect style="fill:#FC8100" x="8" y="11.3" width="8.1" height="0.7" />
+			<rect style="fill:#FC8100" x="8" y="9.3" width="8.1" height="0.7" />
+			<path style="fill:#FC8100"
+				d="M12,0A12,12,0,1,0,24,12,12,12,0,0,0,12,0Zm1.7,20c.8-.8,1-2.8.9-3.8a6.11,6.11,0,0,0,4.1-.8A21.91,21.91,0,0,1,13.7,20Zm5-7.3c0,2.3-3.5,2.5-5.5,2,0,0,1,5.4-2.2,5.4H5.3V3.9H18.7Z" />
+			<rect style="fill:#FC8100" x="8" y="7.3" width="8.1" height="0.7" />
+		</symbol>
+	</svg>
 	<div>
-		<header>
-			<button id="toggle" class="container">
-				<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-				<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-					preserveAspectRatio="xMidYMid meet" viewBox="0 0 100 100" width="40px" height="40px">
-					<defs>
-						<path
-							d="M90 10C92.76 10 95 12.24 95 15C95 18 95 22 95 25C95 27.77 92.76 30 90 30C73 30 27 30 10 30C7.24 30 5 27.77 5 25C5 22 5 18 5 15C5 12.24 7.24 10 10 10C27 10 73 10 90 10Z"
-							id="bbyAyhtzf">
-						</path>
-						<path
-							d="M90 40C92.76 40 95 42.24 95 45C95 48 95 52 95 55C95 57.76 92.76 60 90 60C73 60 27 60 10 60C7.24 60 5 57.76 5 55C5 52 5 48 5 45C5 42.24 7.24 40 10 40C27 40 73 40 90 40Z"
-							id="a6Cc9UtzTP">
-						</path>
-						<path
-							d="M90 70C92.76 70 95 72.24 95 75C95 78 95 82 95 85C95 87.76 92.76 90 90 90C73 90 27 90 10 90C7.24 90 5 87.76 5 85C5 82 5 78 5 75C5 72.24 7.24 70 10 70C27 70 73 70 90 70Z"
-							id="a1OYH9qctm">
-
-						</path>
-					</defs>
-					<g>
-						<g>
-							<g>
-								<use xlink:href="#bbyAyhtzf" opacity="1" fill="#0CF" fill-opacity="1">
-
-								</use>
-							</g>
-							<g>
-								<use xlink:href="#a6Cc9UtzTP" opacity="1" fill="#0CF" fill-opacity="1">
-
-								</use>
-							</g>
-							<g>
-								<use xlink:href="#a1OYH9qctm" opacity="1" fill="#0CF" fill-opacity="1">
-
-								</use>
-							</g>
-						</g>
-					</g>
-				</svg>
-			</button>
-			<nav id="navigation" class="closed">
-				<ul class="container" id="topMenu">
-					<li><a href="#aboutMe" id="aboutMeNave">About me</a></li>
-					<li><a href="#skills" id="skillsNav">Skills</a></li>
-					<li><a href="#workXP" id="workNav">Work Experience</a></li>
-					<li><a href="#portfolio" id="portfolioNav">Portfolio</a></li>
-				</ul>
-			</nav>
-		</header>
-
 		<main>
-			<div class="columns container">
-				<div class="column">
-					<div id="aboutMe" class="card">
-						<div class="aboutMeHeader clearfix">
-							<h1>Colton Pemberton</h1>
-							<p class="tagline">Front end developer for hire.</p>
-							<a href="mailto:czpemberton@gmail.com" target="_top" class="mail">Contact me</a>
-							<h2>About me:</h2>
-							<p>
-								I am an ambitious web developer looking for a full stack or front end position.
-								I've been learning code since I was a freshman in high-school.
-								I started teaching myself Lua with a passion to make video games.
-								I learned a lot about problem-solving with my code.
-								I then learned Java my junior and senior year.
-								I had little experience with web development in high school, but my passion was in video
-								games.
-								I more recently got serious about web development and have been learning everything there is
-								to know with online
-								courses.
-								Finding and fixing bugs in programms is a very satisfying and relieving task I love taking
-								on.
-								I love making great looking web pages, and making code (though it may be unseen) look just
-								as great as my web
-								pages.
-								I love learning code and I'm prepared to learn anything necessary to get the job done.
-							</p>
+			<div class="container">
+				<div class="jumbotron">
+					<img class="bg" src="imgs/spacebg.svg" alt="background">
+					<div class="code">
+						<span>&#60;div&#62;</span>
+						<h1><span>&emsp;&#60;h1&#62;</span>Colton Pemberton<span>&#60;/h1&#62;</span></h1>
+						<h2><span>&emsp;&#60;h2&#62;</span>Front end developer<span>&#60;/h2&#62;</span></h2>
+						<span>&#60;/div&#62;</span><span class="typeCursor">|</span>
+					</div>
+					<div class="planet"></div>
+				</div>
+				<div class="projects">
+					<div class="list">
+						<div class="website" id='0'>
+							<img src="imgs/websites/taskmaster.png" alt="">
+							<div class="overlay"></div>
+							<span>Taskmaster</span>
+						</div>
+						<div class="website" id='1'>
+							<img src="imgs/websites/coffeeshop.png" alt="">
+							<div class="overlay"></div>
+							<span>Coffee Shop</span>
+						</div>
+						<div class="website" id='2'>
+							<img src="imgs/websites/emustudios.png" alt="">
+							<div class="overlay"></div>
+							<span>EMU Studios</span>
+						</div>
+						<!-- <div class="website" id='3'>
+							<img src="imgs/websites/american-v-twin.png" alt="">
+							<div class="overlay"></div>
+							<span>American<br> V-Twin</span>
+						</div> -->
+						<div class="website" id='3'>
+							<img src="imgs/websites/tictactoe.png" alt="">
+							<div class="overlay"></div>
+							<span>Tic Tac Toe</span>
+						</div>
+						<div class="website" id='4'>
+							<img src="imgs/websites/original.png" alt="">
+							<div class="overlay"></div>
+							<span>Legacy Home Page</span>
+						</div>
+						<div class="website" id='5'>
+							<img src="imgs/websites/till.png" alt="">
+							<div class="overlay"></div>
+							<span>Till Calculator</span>
 						</div>
 					</div>
-					<div id="social" class="card">
-						<h2>Social:</h2>
-						<a class="github" href="https://github.com/ColtonZP">
-							<svg width="20%" height="100%" viewBox="0 0 123 120" version="1.1" xmlns="http://www.w3.org/2000/svg"
-								xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/"
-								style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.41421;">
-								<path
-									d="M61.4,1c-33.354,0 -60.4,27.036 -60.4,60.391c0,26.682 17.306,49.319 41.305,57.305c3.019,0.559 4.127,-1.311 4.127,-2.906c0,-1.439 -0.056,-6.197 -0.082,-11.243c-16.803,3.653 -20.349,-7.126 -20.349,-7.126c-2.748,-6.979 -6.706,-8.836 -6.706,-8.836c-5.48,-3.748 0.413,-3.671 0.413,-3.671c6.065,0.426 9.259,6.224 9.259,6.224c5.387,9.231 14.129,6.562 17.576,5.019c0.543,-3.902 2.107,-6.567 3.835,-8.075c-13.416,-1.526 -27.519,-6.706 -27.519,-29.846c0,-6.592 2.36,-11.981 6.224,-16.21c-0.628,-1.521 -2.695,-7.663 0.586,-15.982c0,0 5.072,-1.622 16.613,6.192c4.818,-1.338 9.985,-2.009 15.118,-2.033c5.133,0.024 10.304,0.695 15.131,2.033c11.528,-7.814 16.593,-6.192 16.593,-6.192c3.288,8.319 1.221,14.461 0.593,15.982c3.873,4.229 6.216,9.618 6.216,16.21c0,23.196 -14.13,28.303 -27.58,29.798c2.167,1.874 4.097,5.549 4.097,11.183c0,8.081 -0.069,14.584 -0.069,16.573c0,1.608 1.086,3.491 4.148,2.899c23.987,-7.995 41.271,-30.624 41.271,-57.298c0,-33.355 -27.042,-60.391 -60.4,-60.391"
-									style="fill:#000;" />
-							</svg>
-						</a>
-						<a class="linked_in" href="https://www.linkedin.com/in/colton-pemberton-1a7292163/">
-							<svg width="20%" height="100%" viewBox="0 0 38 38" version="1.1" xmlns="http://www.w3.org/2000/svg"
-								xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/"
-								style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.41421;">
-								<path
-									d="M31.677,31.676l-5.339,0l0,-8.354c0,-1.992 -0.034,-4.555 -2.774,-4.555c-2.778,0 -3.202,2.171 -3.202,4.412l0,8.497l-5.334,0l0,-17.179l5.119,0l0,2.348l0.073,0c0.712,-1.35 2.454,-2.775 5.052,-2.775c5.406,0 6.405,3.557 6.405,8.184l0,9.422Zm-22.67,-19.527c-1.715,0 -3.097,-1.387 -3.097,-3.096c0,-1.709 1.382,-3.096 3.097,-3.096c1.708,0 3.095,1.387 3.095,3.096c0,1.709 -1.387,3.096 -3.095,3.096Zm2.671,19.527l-5.345,0l0,-17.179l5.345,0l0,17.179Zm22.658,-30.676l-30.681,0c-1.465,0 -2.655,1.163 -2.655,2.596l0,30.807c0,1.433 1.19,2.597 2.655,2.597l30.681,0c1.468,0 2.664,-1.164 2.664,-2.597l0,-30.807c0,-1.433 -1.196,-2.596 -2.664,-2.596Z"
-									style="fill:#000;fill-rule:nonzero;" />
-							</svg>
-						</a>
+					<div class="description">
+						<div class="content">
+							<img src="" alt="">
+							<h1></h1>
+							<p></p>
+							<div class="buttons">
+								<a class="live hidden" href="#" target="_blank" rel="noopener">
+									Live
+									<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
+										<path
+											d="M15 12c0 1.657-1.343 3-3 3s-3-1.343-3-3c0-.199.02-.393.057-.581 1.474.541 2.927-.882 2.405-2.371.174-.03.354-.048.538-.048 1.657 0 3 1.344 3 3zm-2.985-7c-7.569 0-12.015 6.551-12.015 6.551s4.835 7.449 12.015 7.449c7.733 0 11.985-7.449 11.985-7.449s-4.291-6.551-11.985-6.551zm-.015 12c-2.761 0-5-2.238-5-5 0-2.761 2.239-5 5-5 2.762 0 5 2.239 5 5 0 2.762-2.238 5-5 5z" />
+									</svg>
+								</a>
+								<a class="source hidden" href="#" target="_blank" rel="noopener">&#60;/Source&#62;</a>
+							</div>
+						</div>
 					</div>
-					<div id="skills" class="card">
-						<h2>Front End Languages:</h2>
-						<ul>
+				</div>
+				<div class="links">
+					<a href="https://github.com/ColtonZP" target="_blank" rel="noopener">
+						<svg class="linkSvg">
+							<use xlink:href="#git" />
+						</svg>
+						<span>GitHub</span>
+					</a>
+					<a href="https://www.linkedin.com/in/colton-pemberton-1a7292163/" target="_blank" rel="noopener">
+						<svg class="linkSvg">
+							<use xlink:href="#in" />
+						</svg>
+						<span>LinkedIn</span>
+					</a>
+					<a href="#" class="res">
+						<svg class="linkSvg">
+							<use xlink:href="#res" />
+						</svg>
+						<span>R&#232;sum&#232;</span>
+					</a>
+					<a href="mailto:czpemberton@gmail.com" target="_top" rel="">
+						<svg class="linkSvg">
+							<use xlink:href="#mail" />
+						</svg>
+						<span>Mail</span>
+					</a>
+				</div>
+				<div class="resume hidden">
+					<div class="content">
+						<button class="close" aria-hidden="true"></button>
+						<h2 class="title">Colton's R&#232;sum&#232;</h2>
+						<h2>Objective</h2>
+						<p>
+							With over 7 years of coding experience I am looking to put my skills to good use and land a job in the web
+							development field. I’ve always had a great passion for coding and want to show off what I can do.
+						</p>
+						<h2>Skills</h2>
+						<ul class="skillsUl">
 							<li>JavaScript</li>
 							<li>React</li>
 							<li>jQuery</li>
@@ -131,132 +150,55 @@
 							<li>CSS</li>
 							<li>SASS</li>
 							<li>Bootstrap</li>
-						</ul>
-					</div>
-					<div id="skills" class="card">
-						<h2>Other Languages:</h2>
-						<ul>
 							<li>Lua</li>
 							<li>Java</li>
 							<li>C#</li>
-						</ul>
-					</div>
-					<div id="skills" class="card">
-						<h2>Misc Skills:</h2>
-						<ul>
 							<li>GitHub Desktop</li>
 							<li>Responsive Layout</li>
-							<li>Mobile First</li>
 							<li>Visual Studio Code</li>
+							<li>Google Analytics</li>
+							<li>Google Tags</li>
+							<li>Google Maps</li>
+							<li>Adobe Photoshop</li>
+							<li>Adobe XD</li>
+							<li>Adobe Illustrator</li>
 						</ul>
-					</div>
-					<div id="skills" class="card">
-						<h2>Google APIs:</h2>
+						<h2>Work Experience</h2>
 						<ul>
-							<li>Analytics</li>
-							<li>Tags</li>
-							<li>Maps</li>
+							<li>
+								<h4>Web Developer, Freelancer</h4>
+								<small>January 2018-current</small>
+							</li>
+							<li>
+								<h4>ASL, Connect Wireless (AT&T Authorized Retailer)</h4>
+								<small>February 2019-current</small>
+							</li>
+							<li>
+								<h4>Sales Manager & Website Maintainer, Phantomb Games</h4>
+								<small>June 2018-January 2019</small>
+							</li>
+							<li>
+								<h4>Supervisor, Motel 6</h4>
+								<small>November 2017-May 2018</small>
+							</li>
+							<li>
+								<h4>Sales Associate, ArchTelecom (Sprint Authorized Retailer)</h4>
+								<small>January 2017-November 2017</small>
+							</li>
+							<li>
+								<h4>Manager, Pizza Hut</h4>
+								<small>March 2015-January 2017</small>
+							</li>
 						</ul>
-					</div>
-					<div id="skills" class="card">
-						<h2>Adobe Skills:</h2>
-						<ul>
-							<li>Photoshop</li>
-							<li>XD</li>
-							<li>Illustrator</li>
-						</ul>
-					</div>
-					<div id="workXP" class="card">
-						<h2>Work Experience:</h2>
-						<h4>AT&T</h4>
-						<small>January 2018-current</small>
-						<h4>Supervisor, Phantomb Games</h4>
-						<small>June 2018-January 2019</small>
-						<h4>Supervisor, Motel 6</h4>
-						<small>November 2017-May 2018</small>
-						<h4>Sales Associate, Sprint</h4>
-						<small>January 2017-November 2017</small>
-						<h4>Manager, Pizza Hut</h4>
-						<small>March 2015-January 2017</small>
-					</div>
-				</div>
-				<div class="column">
-					<div id="portfolio" class="card">
-						<h2>Portfolio:</h2>
-						<div class="Website">
-							<a class="websiteLinks clearfix" href="https://coltonzp.github.io/Taskmaster">
-								<img class="webPic" src="imgs/taskmaster.svg" alt="">
-								<h3>Task Master</h3>
-								<p>
-									A web app that utilizes Google Map services. With this web app you can add multipule address to figure
-									out the best routes to get your tasks done most efficently. This is the first web app that I made.
-									This project uses Vanilla JavaScript & SASS.
-								</p>
-							</a>
-						</div>
-						<div class="Website">
-							<a class="websiteLinks clearfix" href="https://coltonzp.github.io/Coffee-and-Cakes/">
-								<img class="webPic" src="imgs/coffeeshop.png" alt="">
-								<h3>Coffee and Cakes</h3>
-								<p>
-									A fictitious Coffee and Cakes company has allowed me to make a website to show off
-									great CSS and JavaScript
-									Skills.
-								</p>
-							</a>
-						</div>
-						<div class="Website">
-							<a class="websiteLinks clearfix" href="https://coltonzp.github.io/American-V-Twin">
-								<img class="webPic" src="imgs/american-v-twin.png" alt="">
-								<h3>American V-Twin Services</h3>
-								<p>
-									<b>Work in progress</b><br>
-									A site for my uncle's bikeshop. This is my first project to use SASS.
-								</p>
-							</a>
-						</div>
-						<div class="Website">
-							<a class="websiteLinks clearfix" href="https://coltonzp.github.io/tic-tac-toe/">
-								<img class="webPic" src="imgs/tictactoe.png" alt="">
-								<h3>Tic-Tac-Toe</h3>
-								<p>
-									A simple game of Tic-Tac-Toe, my first JavaScript project. Implemented AI to keep
-									players on their toes.
-								</p>
-							</a>
-						</div>
-						<div class="Website">
-							<a class="websiteLinks clearfix" href="https://coltonzp.github.io/till/">
-								<img class="webPic" src="imgs/till.jpg" alt="">
-								<h3>Till Calculator</h3>
-								<p>
-									I have made a till calculator to make counting money at work easier, as well as
-									giving
-									myself a Javascript
-									assignment.
-								</p>
-							</a>
-						</div>
-						<div class="Website">
-							<a class="websiteLinks clearfix" href="https://coltonzp.github.io/legacyhome/">
-								<img class="webPic" src="imgs/original.png" alt="">
-								<h3>Legacy home page</h3>
-								<p>
-									This is a look at the first time I made this home.
-									It's still a great looking page, however I had a better idea and I wanted to start
-									from scratch to practice my
-									skills.
-								</p>
-							</a>
-						</div>
+						<a href="coltonpemberton_resume.pdf" download>Download Full R&#232;sum&#232;</a>
 					</div>
 				</div>
 			</div>
 		</main>
+
 		<footer>
-			Colton Pemberton's resume, updated 2019
 		</footer>
+		<script src="main.js"></script>
 	</div>
-	<script src="main.js"></script>
 </body>
 <html>
