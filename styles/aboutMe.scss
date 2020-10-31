@@ -1,0 +1,45 @@
+.aboutMe {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    @media screen and (min-width: 510px) {
+        flex-direction: row;
+    }
+
+    & .paragraph {
+        margin-bottom: var(--spacing);
+
+        @media screen and (min-width: 510px) {
+            width: calc(50% - var(--spacing));
+        }
+    }
+
+    & ul {
+        display: grid;
+        grid-template-columns: repeat(1fr);
+        grid-gap: var(--spacing);
+
+        @media screen and (min-width: 510px) {
+            width: calc(50% - var(--spacing));
+        }
+
+        & li {
+            @include softUi;
+            padding: 0.5em 1em;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+
+            & img {
+                width: 75px;
+                height: 75px;
+                margin-right: 0.5em;
+            }
+        }
+    }
+}
+
+.skillsTitle {
+    margin-bottom: 2rem;
+}
