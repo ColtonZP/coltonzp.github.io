@@ -1,22 +1,8 @@
-const skills = [
-  'JavaScript',
-  'React',
-  'Next.js',
-  'HTML',
-  'CSS',
-  'SCSS',
-  'Redux',
-  'MobX',
-  'Java',
-  'Git',
-  'Firebase',
-  'Strapi',
-]
+import { skills } from '../content/skills'
 
 const Skills = () => (
-  <div className="skills container">
-    <h1>Skills</h1>
-    <ul>
+  <div className="skills">
+    <ul className="container">
       {skills.map(skill => (
         <li key={skill}>{skill}</li>
       ))}

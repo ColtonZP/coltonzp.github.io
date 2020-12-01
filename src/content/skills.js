@@ -1,0 +1,17 @@
+export const skills = [
+  'HTML',
+  'CSS',
+  'JavaScript',
+  'React',
+  'Next.js',
+  'SCSS',
+  'Redux',
+  'MobX',
+  'Java',
+  'Git',
+  'AWS',
+  'Firebase',
+  'Strapi',
+  'Prismic',
+  'Google Maps',
+]
