@@ -7,12 +7,13 @@ import Skills from './components/Skills'
 import Footer from './components/Footer'
 
 function App() {
+  // const { REACT_APP_API_URL } = process.env
   return (
     <div className="App">
       <Header />
       <AboutMe />
-      <Projects />
       <Skills />
+      <Projects />
       <Footer />
     </div>
   )
