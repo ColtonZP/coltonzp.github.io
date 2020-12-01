@@ -1,24 +1,40 @@
 .skills {
-    & ul {
-        padding: 1em 0;
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-gap: var(--spacing);
+  background: var(--theme);
+  transform: rotate(-5deg);
+  width: 110vw;
+  position: relative;
+  left: -5%;
+  margin: var(--l-spacing) 0;
+  
+  & ul {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    flex-direction: row;
+    font-weight: bold;
 
-        @media screen and (min-width: 510px) {
-            grid-template-columns: repeat(3, 1fr);
-        }
-
-        @media screen and (min-width: 810px) {
-            grid-template-columns: repeat(4, 1fr);
-        }
-
-        & li {
-            background: var(--theme);
-            line-height: 2em;
-            color: white;
-            text-align: center;
-            border-radius: 10px;
-        }
+    @media screen and (min-width: 510px) {
+      grid-template-columns: repeat(3, 1fr);
     }
+
+    @media screen and (min-width: 810px) {
+      grid-template-columns: repeat(4, 1fr);
+    }
+
+    & li {
+      font-size: 2.8em;
+      line-height: 1em;
+      display: inline;
+      color: white;
+      text-align: center;
+      border-radius: 10px;
+      font-style: italic;
+      text-transform: uppercase;
+      font-family: Helvetica Neue;
+
+      &:nth-child(odd) {
+        color: rgb(219, 219, 219);
+      }
+    }
+  }
 }
