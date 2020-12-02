@@ -1,11 +1,11 @@
 .skills {
-  background: var(--theme);
-  transform: rotate(-5deg);
-  width: 110vw;
+  background: var(--blue);
+  transform: rotate(-3deg);
+  width: 103vw;
   position: relative;
-  left: -5%;
+  left: -1.5%;
   margin: var(--l-spacing) 0;
-  
+
   & ul {
     display: flex;
     justify-content: space-evenly;
@@ -23,7 +23,7 @@
 
     & li {
       font-size: 2.8em;
-      line-height: 1em;
+      line-height: .8em;
       display: inline;
       color: white;
       text-align: center;
