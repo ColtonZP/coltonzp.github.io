@@ -7,7 +7,11 @@
 @import './footer.scss';
 
 :root {
-  --theme: #00c8ff;
+  --blue: rgb(53, 167, 255);
+  --yellow: rgb(255, 184, 111);
+  --teal: rgb(8, 126, 139);
+  --green: rgb(93, 211, 158);
+  --red: rgb(214, 64, 69);
   --spacing: 20px;
   --l-spacing: 50px;
 }
@@ -26,8 +30,6 @@ body {
   margin: 0;
   font-family: Nunito, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu,
     Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-  color: #000;
-  background: #e9e9e9;
   overflow-x: hidden;
 }
 
@@ -39,7 +41,7 @@ h1 {
 
 button,
 a {
-  background-color: var(--theme);
+  background-color: var(--blue);
   padding: 0.1em 1em;
   border-radius: 1em;
   font-size: 1em;
