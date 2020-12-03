@@ -1,6 +1,10 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
+import Prismic from 'prismic-javascript'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faEye, faCode } from '@fortawesome/free-solid-svg-icons'
+
+import { Client } from '../prismic-configuration'
+
 import movieTN from '../images/websites/movie.png'
 import taskMasterTN from '../images/websites/taskmaster.png'
 import pizzaTN from '../images/websites/pizza.png'
@@ -99,6 +103,21 @@ const portfolio = [
 
 const Projects = () => {
   const [hidden, toggleHidden] = useState(false)
+  const [doc, setDocData] = React.useState(null)
+
+  useEffect(() => {
+    const fetchData = async () => {
+      const response = await Client.query(Prismic.Predicates.at('document.type', 'project'), {
+        orderings: '[document.first_publication_date]',
+      })
+      if (response) {
+        setDocData(response.results.reverse())
+      }
+    }
+    fetchData()
+  }, [])
+
+  console.log(doc)
 
   return (
     <div className="myWork container">
