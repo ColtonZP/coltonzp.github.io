@@ -8,10 +8,12 @@ export const skills = [
   'Redux',
   'MobX',
   'Java',
+  'Python',
   'Git',
   'AWS',
+  'Netlify',
   'Firebase',
   'Strapi',
   'Prismic',
-  'Google Maps',
+  'Google Maps API',
 ]
