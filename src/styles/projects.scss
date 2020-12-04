@@ -1,40 +1,22 @@
 .myWork {
-  & img {
-    width: 100%;
-  }
-
-  & .reactWork {
+  & .projects {
     margin: var(--spacing) auto;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    grid-gap: var(--spacing);
 
     & li {
-      width: 100%;
-      @media screen and (min-width: 600px) {
-        width: 48%;
+      & img {
+        width: 100%;
+        margin-bottom: var(--spacing);
       }
     }
-  }
 
-  & .vanillaWork {
-    margin: var(--spacing) auto;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-
-    & li {
-      width: 100%;
-      @media screen and (min-width: 600px) {
-        width: 30%;
-      }
+    & a,
+    & span {
+      display: inline-block;
+      margin-right: var(--s-spacing);
     }
-  }
-
-  & a,
-  & span {
-    display: inline-block;
-    margin-right: var(--s-spacing);
   }
 
   & .showMore {

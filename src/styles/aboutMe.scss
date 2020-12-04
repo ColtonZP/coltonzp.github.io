@@ -9,9 +9,13 @@
 
   & ul {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(1, 1fr);
     grid-gap: var(--l-spacing);
     flex-grow: 1;
+
+    @media screen and (min-width: 570px) {
+      grid-template-columns: repeat(3, 1fr);
+    }
 
     & li {
       padding: var(--spacing);
@@ -22,8 +26,8 @@
       border-radius: 10px;
 
       & img {
-        width: 10rem;
-        height: 10rem;
+        width: 80%;
+        max-width: 10rem;
         margin-bottom: var(--spacing);
       }
     }
