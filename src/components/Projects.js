@@ -162,7 +162,7 @@ const Projects = () => {
       </ul>
 
       <button className="showMore" onClick={() => toggleHidden(!hidden)} type="button">
-        {hidden ? 'archive -' : 'archive +'}
+        {hidden ? 'hide archive -' : 'view archive +'}
       </button>
       {hidden && (
         <>
