@@ -1,33 +1,20 @@
 .aboutMe {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  flex-wrap: wrap;
-
-  @media screen and (min-width: 510px) {
-    flex-direction: row;
-  }
+  margin-bottom: var(--spacing);
 
   & .blurb {
-    margin-bottom: var(--spacing);
-
-    @media screen and (min-width: 510px) {
-      width: calc(50% - var(--spacing));
-    }
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-bottom: var(--xl-spacing);
   }
 
   & ul {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: var(--spacing);
+    grid-gap: var(--l-spacing);
     flex-grow: 1;
 
-    @media screen and (min-width: 510px) {
-      width: calc(50% - var(--spacing));
-    }
-
     & li {
-      padding: 0.5em 1em;
+      padding: var(--spacing);
       font-weight: bold;
       display: flex;
       flex-direction: column;
@@ -35,29 +22,25 @@
       border-radius: 10px;
 
       & img {
-        width: 75px;
-        height: 75px;
-        margin-right: 0.5em;
+        width: 10rem;
+        height: 10rem;
+        margin-bottom: var(--spacing);
       }
     }
 
     & .WebDevelopment {
-      background: linear-gradient(rgba(93, 211, 158, 0.8), rgba(93, 211, 158, 0.8)),
-        url('../images/computer.svg') center/70% no-repeat;
+      background: linear-gradient(rgba(93, 211, 158, 0.96), rgba(93, 211, 158, 0.96)),
+        url('../images/computer.svg') center/cover no-repeat;
     }
 
     & .Responsive {
-      background: linear-gradient(rgba(255, 184, 111, 0.8), rgba(255, 184, 111, 0.8)),
-        url('../images/mobile_views.svg') center/70% no-repeat;
+      background: linear-gradient(rgba(255, 184, 111, 0.96), rgba(255, 184, 111, 0.96)),
+        url('../images/mobile_views.svg') center/cover no-repeat;
     }
 
     & .QualityAssurance {
-      background: linear-gradient(rgba(8, 126, 139, 0.8), rgba(8, 126, 139, 0.8)),
-        url('../images/magnification.svg') center/70% no-repeat;
+      background: linear-gradient(rgba(8, 126, 139, 0.96), rgba(8, 126, 139, 0.96)),
+        url('../images/magnification.svg') center/cover no-repeat;
     }
   }
-}
-
-.skillsTitle {
-  margin-bottom: 2rem;
 }

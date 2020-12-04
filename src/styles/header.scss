@@ -26,22 +26,17 @@
     font-weight: 100;
     z-index: 1;
     position: relative;
-    margin-top: 60%;
-    font-size: 64px;
+    margin-top: 30vh;
+    font-size: 6em;
 
     @media screen and (min-width: 510px) {
-      margin-top: 5em;
-    }
-
-    & b {
-      font-weight: 900;
+      margin-top: 30vh;
     }
   }
 
   & h2 {
-    font-size: 24px;
-    z-index: 1;
-    position: relative;
+    font-size: 3em;
     font-weight: 300;
+    z-index: 1;
   }
 }

@@ -1,15 +1,10 @@
 .myWork {
-  & h2 {
-    font-weight: bold;
-    font-size: 1.2em;
-  }
-
   & img {
     width: 100%;
   }
 
   & .reactWork {
-    margin: 2rem auto;
+    margin: var(--spacing) auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -23,7 +18,7 @@
   }
 
   & .vanillaWork {
-    margin: 2rem auto;
+    margin: var(--spacing) auto;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -39,12 +34,13 @@
   & a,
   & span {
     display: inline-block;
-    margin: 1rem 1rem 1rem 0;
+    margin-right: var(--s-spacing);
   }
 
   & .showMore {
     display: block;
     margin: 0 auto;
+    margin-bottom: var(--spacing);
     background: none;
     box-shadow: none;
     color: var(--blue);
@@ -52,10 +48,14 @@
   }
 
   & .archive {
+    border: var(--gray) solid 2px;
+    border-radius: 10px;
+
     & li {
       display: flex;
       align-items: center;
-      font-size: 14px;
+      font-size: 1.2em;
+      padding: var(--s-spacing);
 
       & h3 {
         flex-grow: 1;
@@ -67,6 +67,13 @@
         padding: 0;
         background: none;
         color: var(--blue);
+        box-shadow: none;
+        margin-right: 0px;
+        margin-left: var(--s-spacing);
+      }
+
+      &:nth-child(even) {
+        background: var(--gray);
       }
     }
   }
