@@ -49,7 +49,7 @@ const AboutMe = () => (
       {empSkills.map(skill => (
         <li key={skill.title} className={skill.class}>
           <img src={skill.img} alt={skill.title} />
-          <h4>{skill.title}</h4>
+          <h2>{skill.title}</h2>
         </li>
       ))}
     </ul>

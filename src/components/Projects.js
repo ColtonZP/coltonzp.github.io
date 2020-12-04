@@ -134,7 +134,7 @@ const Projects = () => {
               <a target="_blank" rel="noopener noreferrer" href={site.source}>
                 <FontAwesomeIcon icon={faCode} /> Source
               </a>
-              <h2>{site.name}</h2>
+              <h1>{site.name}</h1>
               <p>{site.desc}</p>
             </div>
           </li>
@@ -154,7 +154,7 @@ const Projects = () => {
               <a target="_blank" rel="noopener noreferrer" href={site.source}>
                 <FontAwesomeIcon icon={faCode} /> Source
               </a>
-              <h2>{site.name}</h2>
+              <h1>{site.name}</h1>
               <p>{site.desc}</p>
             </div>
           </li>
