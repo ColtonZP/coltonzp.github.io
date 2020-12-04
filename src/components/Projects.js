@@ -27,14 +27,6 @@ import { Client } from '../prismic-configuration'
 
 // const portfolio = [
 //   {
-//     img: taskMasterTN,
-//     name: 'Taskmaster',
-//     desc:
-//       "A web app that utilizes Google Map services. With this web app, you can use it as a todo list that has addresses attached to the task. When it's time to plan the day, the API will help determine the most efficient route to get the day done.",
-//     live: 'https://coltonzp.github.io/Taskmaster/',
-//     source: 'https://github.com/ColtonZP/Taskmaster',
-//   },
-//   {
 //     img: kempletTN,
 //     name: 'Kemplet',
 //     desc:
@@ -84,10 +76,10 @@ const Projects = () => {
                 <RichText render={site.data.description} />
 
                 <div className="links">
-                  <a target="_blank" rel="noopener noreferrer" href={site.live}>
+                  <a target="_blank" rel="noopener noreferrer" href={site.data.live.url}>
                     <FontAwesomeIcon icon={faEye} /> Live
                   </a>
-                  <a target="_blank" rel="noopener noreferrer" href={site.source}>
+                  <a target="_blank" rel="noopener noreferrer" href={site.data.source.url}>
                     <FontAwesomeIcon icon={faCode} /> Source
                   </a>
                 </div>
