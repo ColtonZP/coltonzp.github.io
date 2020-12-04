@@ -45,6 +45,10 @@ const Projects = () => {
               </div>
 
               <RichText render={site.data.description} />
+              {/* {site.data.tags.map(tag => (
+                  <li key={tag}>{tag}</li>
+                ))} */}
+              <div className="tags">{RichText.render(site.data.tags)}</div>
             </li>
           ))}
       </ul>

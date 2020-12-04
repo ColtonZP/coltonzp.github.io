@@ -10,11 +10,24 @@
       margin-bottom: var(--spacing);
     }
 
-    & a,
-    & span {
+    & a {
       display: inline-block;
       margin-right: var(--s-spacing);
       margin-bottom: var(--spacing);
+    }
+
+    & p {
+      margin-bottom: var(--spacing);
+    }
+
+    & .tags {
+      color: var(--blue);
+      font-size: 1.2em;
+      display:  flex;
+
+      & p {
+        margin-right: var(--spacing);
+      }
     }
   }
 
