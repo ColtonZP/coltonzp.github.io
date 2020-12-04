@@ -129,12 +129,10 @@ const Projects = () => {
             <img src={site.img} alt={`Thumbnail of ${site.name}`} />
             <div className="work">
               <a target="_blank" rel="noopener noreferrer" href={site.live}>
-                <FontAwesomeIcon icon={faEye} />
-                Live
+                <FontAwesomeIcon icon={faEye} /> Live
               </a>
               <a target="_blank" rel="noopener noreferrer" href={site.source}>
-                <FontAwesomeIcon icon={faCode} />
-                Source
+                <FontAwesomeIcon icon={faCode} /> Source
               </a>
               <h2>{site.name}</h2>
               <p>{site.desc}</p>
@@ -151,12 +149,10 @@ const Projects = () => {
             </div>
             <div className="work">
               <a target="_blank" rel="noopener noreferrer" href={site.live}>
-                <FontAwesomeIcon icon={faEye} />
-                Live
+                <FontAwesomeIcon icon={faEye} /> Live
               </a>
               <a target="_blank" rel="noopener noreferrer" href={site.source}>
-                <FontAwesomeIcon icon={faCode} />
-                Source
+                <FontAwesomeIcon icon={faCode} /> Source
               </a>
               <h2>{site.name}</h2>
               <p>{site.desc}</p>
