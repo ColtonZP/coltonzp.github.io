@@ -6,44 +6,6 @@ import { faEye, faCode } from '@fortawesome/free-solid-svg-icons'
 
 import { Client } from '../prismic-configuration'
 
-// const reactWork = [
-//   {
-//     img: movieTN,
-//     name: 'React Movie Database',
-//     desc:
-//       "This react project uses an API from 'The Movie Database' to pull currently playing movies as well as movies that are increasingly getting popular. Clicking on a movie poster will also show a detailed view of the movie, such as who acts in it as well as related moves.",
-//     live: 'https://coltonzp.github.io/React-Movie-Database/',
-//     source: 'https://github.com/ColtonZP/React-Movie-Database',
-//   },
-//   {
-//     img: pizzaTN,
-//     name: "Colton's Pizza",
-//     desc:
-//       'A fictitious Pizza company has allowed me to make a website with React. This site demonstrates cart functionality with Redux as well as a great interactive pizza maker, be sure to check it out!',
-//     live: 'https://coltonzp.github.io/react-pizza/',
-//     source: 'https://github.com/ColtonZP/react-pizza',
-//   },
-// ]
-
-// const portfolio = [
-//   {
-//     img: kempletTN,
-//     name: 'Kemplet',
-//     desc:
-//       'A todo app made with React. Allows multiple projects with todo lists inside of them. Utilizes Firebase for users and a database.',
-//     live: 'https://kemplet.com',
-//     source: 'https://github.com/ColtonZP/kemplet',
-//   },
-//   {
-//     img: coffeeTN,
-//     name: 'Coffee Shop',
-//     desc:
-//       'A fictitious Coffee and Cakes company has allowed me to make a website to show off excellent CSS and JavaScript Skills. This site uses cookies to keep carts saved on the computer.',
-//     live: 'https://coltonzp.github.io/Coffee-and-Cakes/',
-//     source: 'https://github.com/ColtonZP/coffee-and-cakes',
-//   },
-// ]
-
 const Projects = () => {
   const [hidden, toggleHidden] = useState(false)
   const [projects, setProjects] = useState(null)
@@ -71,19 +33,18 @@ const Projects = () => {
           projects.map(site => (
             <li key={RichText.asText(site.data.name)}>
               <img src={site.data.image.url} alt={RichText.asText(site.data.name)} />
-              <div className="work">
-                <RichText render={site.data.name} />
-                <RichText render={site.data.description} />
+              <RichText render={site.data.name} />
 
-                <div className="links">
-                  <a target="_blank" rel="noopener noreferrer" href={site.data.live.url}>
-                    <FontAwesomeIcon icon={faEye} /> Live
-                  </a>
-                  <a target="_blank" rel="noopener noreferrer" href={site.data.source.url}>
-                    <FontAwesomeIcon icon={faCode} /> Source
-                  </a>
-                </div>
+              <div className="links">
+                <a target="_blank" rel="noopener noreferrer" href={site.data.live.url}>
+                  <FontAwesomeIcon icon={faEye} /> Live
+                </a>
+                <a target="_blank" rel="noopener noreferrer" href={site.data.source.url}>
+                  <FontAwesomeIcon icon={faCode} /> Source
+                </a>
               </div>
+
+              <RichText render={site.data.description} />
             </li>
           ))}
       </ul>

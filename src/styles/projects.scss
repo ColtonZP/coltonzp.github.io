@@ -2,10 +2,17 @@
   & .projects {
     margin: var(--spacing) auto;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-    grid-gap: var(--spacing);
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: var(--l-spacing);
 
     & li {
+      display: flex;
+      flex-direction: column;
+
+      & p {
+        flex-grow: 1;
+      }
+
       & img {
         width: 100%;
         margin-bottom: var(--spacing);
@@ -16,6 +23,7 @@
     & span {
       display: inline-block;
       margin-right: var(--s-spacing);
+      margin-bottom: var(--spacing);
     }
   }
 
