@@ -120,8 +120,6 @@ const Projects = () => {
     fetchData()
   }, [])
 
-  console.log(archive, projects)
-
   return (
     <div className="myWork container">
       <h1>Projects</h1>
@@ -171,17 +169,17 @@ const Projects = () => {
         <>
           <ul className="archive">
             {archive.map(site => (
-              <li key={site.data.name}>
+              <li key={RichText.asText(site.data.name)}>
                 <RichText render={site.data.name} />
                 <div className="links">
                   {site.source === '-' ? (
                     <span>-</span>
                   ) : (
-                    <a target="_blank" rel="noopener noreferrer" href={site.source}>
+                    <a target="_blank" rel="noopener noreferrer" href={site.data.source.url}>
                       <FontAwesomeIcon icon={faCode} />
                     </a>
                   )}
-                  <a target="_blank" rel="noopener noreferrer" href={site.live}>
+                  <a target="_blank" rel="noopener noreferrer" href={site.data.live.url}>
                     <FontAwesomeIcon icon={faEye} />
                   </a>
                 </div>
