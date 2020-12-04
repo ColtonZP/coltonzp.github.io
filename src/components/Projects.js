@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import Prismic from 'prismic-javascript'
+import { RichText } from 'prismic-reactjs'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faEye, faCode } from '@fortawesome/free-solid-svg-icons'
 
@@ -103,7 +104,8 @@ const portfolio = [
 
 const Projects = () => {
   const [hidden, toggleHidden] = useState(false)
-  const [doc, setDocData] = React.useState(null)
+  const [projects, setProjects] = useState(null)
+  const [archive, setArchive] = useState(null)
 
   useEffect(() => {
     const fetchData = async () => {
@@ -111,13 +113,14 @@ const Projects = () => {
         orderings: '[document.first_publication_date]',
       })
       if (response) {
-        setDocData(response.results.reverse())
+        setArchive(response.results.filter(res => res.data.archived).reverse())
+        setProjects(response.results.filter(res => !res.data.archived).reverse())
       }
     }
     fetchData()
   }, [])
 
-  console.log(doc)
+  console.log(archive, projects)
 
   return (
     <div className="myWork container">
@@ -167,9 +170,9 @@ const Projects = () => {
       {hidden && (
         <>
           <ul className="archive">
-            {portfolio.slice(3).map(site => (
-              <li key={site.name}>
-                <h3>{site.name}</h3>
+            {archive.map(site => (
+              <li key={site.data.name}>
+                <RichText render={site.data.name} />
                 <div className="links">
                   {site.source === '-' ? (
                     <span>-</span>
