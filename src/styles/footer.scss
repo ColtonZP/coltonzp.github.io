@@ -1,15 +1,14 @@
 footer {
-  background: url('../images/bottom_wave.svg') bottom center/250% no-repeat;
-  padding: 180px 0 var(--spacing) 0;
   text-align: center;
 
-  @media screen and (min-width: 700px) {
-    background-size: 140%;
+  & img {
+    position: relative;
+    width: 100%;
+    top: 5px;
   }
 
-  @media screen and (min-width: 1300px) {
-    background-size: 100%;
-    padding-top: 200px;
+  & .content {
+    background: var(--blue);
   }
 
   & .links {
@@ -19,7 +18,7 @@ footer {
       vertical-align: middle;
       padding: 0;
       color: white;
-      margin: 0 var(--spacing);
+      margin: var(--spacing) var(--spacing);
       box-shadow: none;
     }
   }
