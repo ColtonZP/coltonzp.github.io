@@ -13,7 +13,7 @@ function Footer() {
       <div className="content">
         <div className="container">
           <h1>Get in touch!</h1>
-          <div className="email">
+          <div className="contact">
             <Contact />
             <img className="mail" src={mail} alt="mailing" />
           </div>
