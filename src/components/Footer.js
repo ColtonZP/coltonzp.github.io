@@ -1,18 +1,20 @@
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faEnvelopeSquare } from '@fortawesome/free-solid-svg-icons'
 import { faGithubSquare, faLinkedin } from '@fortawesome/free-brands-svg-icons'
+
+import Contact from './Contact'
 import bottomWave from '../images/bottom_wave.svg'
 
 function Footer() {
   return (
     <footer>
-      <img src={bottomWave} alt="" />
+      <img className="wave" src={bottomWave} alt="" />
       <div className="content">
+        <div className="email container">
+          <h1>Get in touch!</h1>
+          <Contact />
+        </div>
         <div className="links container">
-          <a href="mailto:colton@coltonpemberton.com" className="icon">
-            <FontAwesomeIcon icon={faEnvelopeSquare} />
-          </a>
           <a href="https://github.com/ColtonZP" className="icon">
             <FontAwesomeIcon icon={faGithubSquare} />
           </a>

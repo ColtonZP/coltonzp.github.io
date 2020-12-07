@@ -1,19 +1,56 @@
 footer {
-  text-align: center;
-
-  & img {
+  & .wave {
     position: relative;
     width: 100%;
     top: 5px;
   }
 
+  & h1 {
+    color: white;
+  }
+
+  & .contactForm {
+    & label {
+      color: white;
+    }
+
+    & input,
+    & textarea {
+      width: 100%;
+      padding: var(--s-spacing);
+      margin-bottom: var(--spacing);
+      border-radius: 10px;
+      border: none;
+      outline: none;
+      background: white;
+    }
+
+    & textarea {
+      resize: none;
+      height: 300px;
+    }
+
+    & input[type='submit'] {
+      background: var(--green);
+      color: white;
+      font-size: 1.8rem;
+      font-weight: bold;
+      box-shadow: 5px 5px 15px #3d3d3d;
+      cursor: pointer;
+    }
+  }
+
   & .content {
     background: var(--blue);
+    font-size: 1.6em;
+    padding-top: var(--l-spacing);
   }
 
   & .links {
+    text-align: center;
+
     & .icon {
-      font-size: 4em;
+      font-size: 5rem;
       background: none;
       vertical-align: middle;
       padding: 0;
