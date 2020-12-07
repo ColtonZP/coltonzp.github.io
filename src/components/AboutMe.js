@@ -1,8 +1,8 @@
 import React from 'react'
 import computer_work from '../images/computer_work.svg'
 import computer from '../images/computer.svg'
-import mobileViews from '../images/mobile_views.svg'
-import magnification from '../images/magnification.svg'
+import responsive from '../images/responsive_design.svg'
+import qa from '../images/qa.svg'
 
 const empSkills = [
   {
@@ -13,12 +13,12 @@ const empSkills = [
   {
     title: 'Responsive',
     class: 'Responsive',
-    img: mobileViews,
+    img: responsive,
   },
   {
     title: 'Quality Assurance',
     class: 'QualityAssurance',
-    img: magnification,
+    img: qa,
   },
 ]
 
