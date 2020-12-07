@@ -1,13 +1,26 @@
 .aboutMe {
-  margin-bottom: var(--spacing);
-
   & .blurb {
-    display: grid;
     grid-template-columns: repeat(2, 1fr);
-    margin-bottom: var(--xl-spacing);
+    grid-gap: var(--l-spacing);
+    margin: var(--xl-spacing) 0;
 
-    & p {
-      margin-bottom: var(--spacing);
+    @media screen and (min-width: 640px) {
+      display: grid;
+    }
+
+    & .text {
+      margin: auto;
+
+      & p {
+        margin-bottom: var(--spacing);
+      }
+    }
+
+    & img {
+      display: none;
+      @media screen and (min-width: 640px) {
+        display: block;
+      }
     }
   }
 

@@ -1,4 +1,5 @@
 import React from 'react'
+import computer_work from '../images/computer_work.svg'
 import computer from '../images/computer.svg'
 import mobileViews from '../images/mobile_views.svg'
 import magnification from '../images/magnification.svg'
@@ -42,7 +43,7 @@ const AboutMe = () => (
         </a>
       </div>
 
-      <img className="worker" src="" alt="" />
+      <img className="worker" src={computer_work} alt="" />
     </div>
 
     <ul>
