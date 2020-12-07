@@ -9,34 +9,50 @@ footer {
     color: white;
   }
 
-  & .contactForm {
-    & label {
-      color: white;
+  & .email {
+    @media screen and (min-width: 640px) {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: var(--l-spacing);
     }
 
-    & input,
-    & textarea {
-      width: 100%;
-      padding: var(--s-spacing);
-      margin-bottom: var(--spacing);
-      border-radius: 10px;
-      border: none;
-      outline: none;
-      background: white;
+    & .contactForm {
+      & label {
+        color: white;
+      }
+
+      & input,
+      & textarea {
+        width: 100%;
+        padding: var(--s-spacing);
+        margin-bottom: var(--spacing);
+        border-radius: 10px;
+        border: none;
+        outline: none;
+        background: white;
+      }
+
+      & textarea {
+        resize: none;
+        height: 300px;
+      }
+
+      & input[type='submit'] {
+        background: var(--green);
+        color: white;
+        font-size: 1.8rem;
+        font-weight: bold;
+        box-shadow: 5px 5px 15px #3d3d3d;
+        cursor: pointer;
+      }
     }
 
-    & textarea {
-      resize: none;
-      height: 300px;
-    }
+    & .mail {
+      display: none;
 
-    & input[type='submit'] {
-      background: var(--green);
-      color: white;
-      font-size: 1.8rem;
-      font-weight: bold;
-      box-shadow: 5px 5px 15px #3d3d3d;
-      cursor: pointer;
+      @media screen and (min-width: 640px) {
+        display: block;
+      }
     }
   }
 
