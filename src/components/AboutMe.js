@@ -26,12 +26,17 @@ const AboutMe = () => (
   <div className="aboutMe container">
     <div className="blurb">
       <div className="text">
-        <h1>About me</h1>
+        <h1>
+          Hello, there!{' '}
+          <span role="img" aria-label="wave">
+            👋
+          </span>
+        </h1>
         <p>
-          Hey, I’m Colton. I spend a lot of time with Front-end development. With the rapid increase
-          in mobile traffic, it’s no question everything should be built from the ground up with
-          mobile in mind. Striving for a pixel perfect site is only on the surface, nothing should
-          be left out; everything I make is bug-free with the best performance possible.
+          I’m Colton. I spend a lot of time with Front-end development. With the rapid increase in
+          mobile traffic, it’s no question everything should be built from the ground up with mobile
+          in mind. Striving for a pixel perfect site is only on the surface, nothing should be left
+          out; everything I make is bug-free with the best performance possible.
         </p>
         <a
         // className="Download"
