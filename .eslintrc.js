@@ -36,6 +36,6 @@ module.exports = {
       },
     ],
     'react/prop-types': 0,
-    'no-unused-labels': 1,
+    'no-unused-vars': 1,
   },
 }

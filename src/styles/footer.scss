@@ -1,4 +1,6 @@
 footer {
+  margin-top: var(--xl-spacing);
+  
   & .wave {
     position: relative;
     width: 100%;
@@ -17,10 +19,6 @@ footer {
     }
 
     & .contactForm {
-      & label {
-        color: white;
-      }
-
       & .name,
       & .number,
       & .email,
@@ -29,9 +27,13 @@ footer {
         padding: var(--s-spacing);
         margin-bottom: var(--spacing);
         border-radius: 10px;
-        border: none;
+        border: solid 1px white;
         outline: none;
         background: white;
+
+        &:not(:placeholder-shown):invalid {
+          border: solid 1px red;
+        }
       }
 
       & textarea {

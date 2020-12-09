@@ -28,14 +28,10 @@ export default function ContactUs() {
 
   return (
     <form className="contactForm" onSubmit={sendEmail}>
-      <label htmlFor="name">Name:</label>
-      <input className="name" type="text" name="user_name" />
-      <label htmlFor="number">Phone:</label>
-      <input className="number" type="tel" name="contact_number" />
-      <label htmlFor="email">Email:</label>
-      <input className="email" type="email" name="user_email" />
-      <label htmlFor="message">Message:</label>
-      <textarea className="message" name="message" />
+      <input className="name" type="text" name="user_name" placeholder="Name" required />
+      <input className="number" type="tel" name="contact_number" placeholder="Phone" />
+      <input className="email" type="email" name="user_email" placeholder="Email" required />
+      <textarea className="message" name="message" placeholder="Message" required />
       <input type="submit" value="Send" />
     </form>
   )

@@ -35,7 +35,7 @@
     }
 
     & li {
-      padding: var(--spacing);
+      padding: var(--spacing) var(--s-spacing);
       font-weight: bold;
       display: flex;
       flex-direction: column;
