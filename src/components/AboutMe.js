@@ -38,14 +38,14 @@ const AboutMe = () => (
           in mind. Striving for a pixel perfect site is only on the surface, nothing should be left
           out; everything I make is bug-free with the best performance possible.
         </p>
-        <a
-        // className="Download"
-        // href={resumeDL}
-        // download
-        // onClick={props.analytics.logEvent('resume_downloaded')}
+        {/* <a
+        className="Download"
+        href={resumeDL}
+        download
+        onClick={props.analytics.logEvent('resume_downloaded')}
         >
           Download Resume
-        </a>
+        </a> */}
       </div>
 
       <img className="worker" src={computer_work} alt="" />
