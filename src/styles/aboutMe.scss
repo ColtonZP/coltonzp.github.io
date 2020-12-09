@@ -47,6 +47,10 @@
         max-width: 10rem;
         margin-bottom: var(--spacing);
       }
+
+      & p {
+        text-align: center;
+      }
     }
 
     & .WebDevelopment {
