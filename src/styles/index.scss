@@ -15,12 +15,11 @@
   --xs-spacing: 5px;
   --s-spacing: 10px;
   --spacing: 10px;
-  --l-spacing: 20px;
+  --l-spacing: 40px;
   --xl-spacing: 80px;
 
   @media screen and (min-width: 540px) {
     --spacing: 20px;
-    --l-spacing: 40px;
   }
 }
 
@@ -86,5 +85,5 @@ ul {
 .container {
   max-width: 1080px;
   margin: 0 auto;
-  padding: 0 var(--l-spacing);
+  padding: 0 var(--spacing);
 }
