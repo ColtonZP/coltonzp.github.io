@@ -1,8 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import Prismic from 'prismic-javascript'
 import { RichText } from 'prismic-reactjs'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faEye, faCode } from '@fortawesome/free-solid-svg-icons'
 
 import { Client } from '../prismic-configuration'
 
@@ -37,10 +35,10 @@ const Projects = () => {
 
               <div className="links">
                 <a target="_blank" rel="noopener noreferrer" href={site.data.live.url}>
-                  <FontAwesomeIcon icon={faEye} /> Live
+                  Live
                 </a>
                 <a target="_blank" rel="noopener noreferrer" href={site.data.source.url}>
-                  <FontAwesomeIcon icon={faCode} /> Source
+                  Source
                 </a>
               </div>
 
@@ -65,11 +63,11 @@ const Projects = () => {
               <div className="links">
                 {site.data.source.url && (
                   <a target="_blank" rel="noopener noreferrer" href={site.data.source.url}>
-                    <FontAwesomeIcon icon={faCode} />
+                    Source
                   </a>
                 )}
                 <a target="_blank" rel="noopener noreferrer" href={site.data.live.url}>
-                  <FontAwesomeIcon icon={faEye} />
+                  Live
                 </a>
               </div>
             </li>

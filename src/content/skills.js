@@ -2,6 +2,7 @@ export const skills = [
   'HTML',
   'CSS',
   'JavaScript',
+  'TypeScript',
   'React',
   'Next.js',
   'SCSS',
@@ -15,5 +16,4 @@ export const skills = [
   'Firebase',
   'Strapi',
   'Prismic',
-  'Google Maps API',
 ]
