@@ -1,10 +1,10 @@
 import React from 'react'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faGithubSquare, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 
 import Contact from './Contact'
-import bottomWave from '../images/bottom_wave.svg'
 import mail from '../images/mail.svg'
+import bottomWave from '../images/bottom_wave.svg'
+import github from '../images/github.svg'
+import linkedin from '../images/linkedin.svg'
 
 function Footer() {
   return (
@@ -19,10 +19,10 @@ function Footer() {
           </div>
           <div className="links">
             <a href="https://github.com/ColtonZP" className="icon">
-              <FontAwesomeIcon icon={faGithubSquare} />
+              <img src={github} alt="Github" />
             </a>
             <a href="https://www.linkedin.com/in/colton-pemberton-1a7292163/" className="icon">
-              <FontAwesomeIcon icon={faLinkedin} />
+              <img src={linkedin} alt="LinkedIn" />
             </a>
           </div>
         </div>
