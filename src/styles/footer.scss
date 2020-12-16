@@ -67,12 +67,11 @@ footer {
     text-align: center;
 
     & .icon {
-      font-size: 5rem;
       background: none;
       vertical-align: middle;
       padding: 0;
       color: white;
-      margin: var(--spacing) var(--spacing);
+      margin: var(--l-spacing) var(--spacing);
       box-shadow: none;
     }
   }
