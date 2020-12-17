@@ -40,9 +40,10 @@ const AboutMe = () => (
         </h1>
         <p>
           I’m Colton, and I spend a lot of time with Front-end development. Coding has taken over my
-          life since I wrote my first line of code: console.log(&#34;Hello, World!&#34;). Since then
-          I’ve worked hard to make the internet a better place than when I found it. Everything I
-          make has the goal of making people&#39;s life easier in the vastly expanding digital age.
+          life since writing my first line of code:{' '}
+          <code>console.log(&#34;Hello, World!&#34;)</code>. Since then I’ve worked hard to make the
+          internet a better place than when I found it. Everything I make has the goal of making
+          people&#39;s life easier in the vastly expanding digital age.
         </p>
         {/* <a
         className="Download"
