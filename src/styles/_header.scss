@@ -27,7 +27,6 @@
     z-index: 1;
     position: relative;
     margin-top: 30vh;
-    font-size: 6em;
 
     @media screen and (min-width: 510px) {
       margin-top: 30vh;
@@ -35,7 +34,6 @@
   }
 
   & h2 {
-    font-size: 3em;
     font-weight: 300;
     z-index: 1;
   }
