@@ -12,7 +12,7 @@ function Footer() {
       <img className="wave" src={bottomWave} alt="" />
       <div className="content">
         <div className="container">
-          <h1>Get in touch!</h1>
+          <h3>Get in touch!</h3>
           <div className="contact">
             <Contact />
             <img className="mail" src={mail} alt="mailing" />

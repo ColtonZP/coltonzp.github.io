@@ -32,12 +32,12 @@ const AboutMe = () => (
   <div className="aboutMe container">
     <div className="blurb">
       <div className="text">
-        <h1>
+        <h3>
           Hello, there!{' '}
           <span role="img" aria-label="wave">
             👋
           </span>
-        </h1>
+        </h3>
         <p>
           I’m Colton, and I spend a lot of time with Front-end development. Coding has taken over my
           life since writing my first line of code:{' '}
@@ -62,7 +62,7 @@ const AboutMe = () => (
       {empSkills.map(skill => (
         <li key={skill.title} className={skill.class}>
           <img src={skill.img} alt={skill.title} />
-          <h2>{skill.title}</h2>
+          <h4>{skill.title}</h4>
           <p>{skill.desc}</p>
         </li>
       ))}

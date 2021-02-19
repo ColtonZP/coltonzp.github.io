@@ -4,10 +4,10 @@ footer {
   & .wave {
     position: relative;
     width: 100%;
-    top: 5px;
+    top: 8px;
   }
 
-  & h1 {
+  & h3 {
     color: white;
   }
 
@@ -44,6 +44,7 @@ footer {
         background: var(--green);
         box-shadow: 3px 3px 10px #444;
         cursor: pointer;
+        font-size: 1rem;
       }
     }
 
@@ -59,7 +60,6 @@ footer {
 
   & .content {
     background: var(--blue);
-    font-size: 1.4em;
     padding-top: var(--l-spacing);
   }
 
@@ -71,7 +71,7 @@ footer {
       vertical-align: middle;
       padding: 0;
       color: white;
-      margin: var(--l-spacing) var(--spacing);
+      margin: 150px 25px 50px;
       box-shadow: none;
     }
   }

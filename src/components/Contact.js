@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function ContactUs() {
+export default function Contact() {
   return (
     <form className="contactForm" name="contact" method="post">
       <input type="hidden" name="form-name" value="contact" />
