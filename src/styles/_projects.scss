@@ -6,11 +6,12 @@
     grid-gap: var(--l-spacing);
 
     & h4 {
-      margin-bottom: 0;
+      margin: 0;
     }
 
     & img {
       width: 100%;
+      margin: var(--spacing) 0;
     }
 
     & a {
@@ -30,7 +31,7 @@
       margin: var(--spacing) 0;
 
       & p {
-        margin: 0 var(--spacing) 0 0;
+        margin: 0 1ch 0 0;
       }
     }
   }
@@ -53,12 +54,12 @@
     & li {
       display: flex;
       align-items: center;
-      font-size: 1.2em;
       padding: var(--s-spacing);
 
       & .title {
         flex-grow: 1;
-        margin-bottom: 0;
+        margin: 0;
+        padding: 0;
         color: black;
       }
 
@@ -67,12 +68,11 @@
         padding: 0;
         background: none;
         box-shadow: none;
-        margin-right: 0px;
-        margin-left: var(--s-spacing);
       }
 
       & a {
         color: var(--blue);
+        margin-left: 1rem;
       }
 
       &:nth-child(even) {
