@@ -2,6 +2,7 @@ import React from 'react'
 import computer_work from '../images/computer_work.svg'
 
 import { empSkills } from '../content/skills'
+import colton_pemberton_resume from '../content/colton_pemberton_resume.pdf'
 
 const AboutMe = () => (
   <div className="aboutMe container">
@@ -20,14 +21,9 @@ const AboutMe = () => (
           internet a better place than when I found it. Everything I make has the goal of making
           people&#39;s life easier in the vastly expanding digital age.
         </p>
-        {/* <a
-        className="Download"
-        href={resumeDL}
-        download
-        onClick={props.analytics.logEvent('resume_downloaded')}
-        >
+        <a className="Download" href={colton_pemberton_resume} download>
           Download Resume
-        </a> */}
+        </a>
       </div>
 
       <img className="worker" src={computer_work} alt="" />
