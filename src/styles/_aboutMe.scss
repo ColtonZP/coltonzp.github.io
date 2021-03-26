@@ -44,7 +44,11 @@
 
       & img {
         width: 80%;
-        max-width: 10rem;
+        max-width: 8rem;
+      }
+
+      .cardTitle {
+        margin: var(--spacing) 0;
       }
 
       & p {

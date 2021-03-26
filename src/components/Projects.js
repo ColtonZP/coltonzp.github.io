@@ -24,13 +24,13 @@ const Projects = () => {
 
   return (
     <div className="myWork container">
-      <h3>Projects</h3>
+      <h2>Projects</h2>
 
       <ul className="projects">
         {projects &&
           projects.map(site => (
             <li key={RichText.asText(site.data.name)}>
-              <h4>{RichText.asText(site.data.name)}</h4>
+              <h3>{RichText.asText(site.data.name)}</h3>
 
               <img src={site.data.image.url} alt={RichText.asText(site.data.name)} />
 
