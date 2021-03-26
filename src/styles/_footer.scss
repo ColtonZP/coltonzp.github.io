@@ -4,11 +4,12 @@ footer {
   & .wave {
     position: relative;
     width: 100%;
-    top: 5px;
+    top: 8px;
   }
 
-  & h1 {
+  & h2 {
     color: white;
+    margin: var(--spacing) 0;
   }
 
   & .contact {
@@ -28,22 +29,26 @@ footer {
         border-radius: 10px;
         border: solid 1px white;
         outline: none;
+        font-size: 16px;
         background: white;
+        font-family: Nunito, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu,
+          Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 
         &:not(:placeholder-shown):invalid {
           border: solid 1px red;
         }
       }
 
-      & textarea {
+      & .message {
         resize: none;
-        height: 300px;
+        height: 350px;
       }
 
       & input[type='submit'] {
         background: var(--green);
         box-shadow: 3px 3px 10px #444;
         cursor: pointer;
+        font-size: 1rem;
       }
     }
 
@@ -59,7 +64,6 @@ footer {
 
   & .content {
     background: var(--blue);
-    font-size: 1.4em;
     padding-top: var(--l-spacing);
   }
 
@@ -71,7 +75,7 @@ footer {
       vertical-align: middle;
       padding: 0;
       color: white;
-      margin: var(--l-spacing) var(--spacing);
+      margin: 150px 25px 50px;
       box-shadow: none;
     }
   }

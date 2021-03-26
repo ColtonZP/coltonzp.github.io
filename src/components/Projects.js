@@ -24,14 +24,15 @@ const Projects = () => {
 
   return (
     <div className="myWork container">
-      <h1>Projects</h1>
+      <h2>Projects</h2>
 
       <ul className="projects">
         {projects &&
           projects.map(site => (
             <li key={RichText.asText(site.data.name)}>
+              <h3>{RichText.asText(site.data.name)}</h3>
+
               <img src={site.data.image.url} alt={RichText.asText(site.data.name)} />
-              <RichText render={site.data.name} />
 
               <div className="links">
                 <a target="_blank" rel="noopener noreferrer" href={site.data.live.url}>
@@ -42,11 +43,9 @@ const Projects = () => {
                 </a>
               </div>
 
-              <RichText render={site.data.description} />
-              {/* {site.data.tags.map(tag => (
-                  <li key={tag}>{tag}</li>
-                ))} */}
               <div className="tags">{RichText.render(site.data.tags)}</div>
+
+              <RichText render={site.data.description} />
             </li>
           ))}
       </ul>
@@ -59,7 +58,7 @@ const Projects = () => {
         <ul className="archive">
           {archive.map(site => (
             <li key={RichText.asText(site.data.name)}>
-              <RichText render={site.data.name} />
+              <h5 className="title">{RichText.asText(site.data.name)}</h5>
               <div className="links">
                 {site.data.source.url && (
                   <a target="_blank" rel="noopener noreferrer" href={site.data.source.url}>

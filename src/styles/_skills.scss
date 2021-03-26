@@ -22,7 +22,7 @@
     }
 
     & li {
-      font-size: 4em;
+      font-size: 2.369rem;
       line-height: 1em;
       display: inline;
       color: white;
@@ -30,7 +30,7 @@
       border-radius: 10px;
       font-style: italic;
       text-transform: uppercase;
-      font-family: Helvetica Neue;
+      font-family: Helvetica;
 
       &:nth-child(odd) {
         // color: var(--yellow);

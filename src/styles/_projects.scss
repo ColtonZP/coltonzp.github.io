@@ -5,19 +5,18 @@
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     grid-gap: var(--l-spacing);
 
-    & h1 {
-      font-size: 2em;
+    & h4 {
+      margin: 0;
     }
 
     & img {
       width: 100%;
-      margin-bottom: var(--spacing);
+      margin: var(--spacing) 0;
     }
 
     & a {
       display: inline-block;
       margin-right: var(--s-spacing);
-      margin-bottom: var(--spacing);
     }
 
     & p {
@@ -27,9 +26,12 @@
     & .tags {
       color: var(--blue);
       display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      margin: var(--spacing) 0;
 
       & p {
-        margin: 0 var(--spacing) 0 0;
+        margin: 0 2ch 0 0;
       }
     }
   }
@@ -52,24 +54,25 @@
     & li {
       display: flex;
       align-items: center;
-      font-size: 1.2em;
       padding: var(--s-spacing);
 
-      & h1 {
+      & .title {
         flex-grow: 1;
-        font-weight: 200;
-        margin-bottom: 0;
-        font-size: 1.6rem;
+        margin: 0;
+        padding: 0;
+        color: black;
       }
 
       & a,
-      & span {
+      & .title {
         padding: 0;
         background: none;
-        color: var(--blue);
         box-shadow: none;
-        margin-right: 0px;
-        margin-left: var(--s-spacing);
+      }
+
+      & a {
+        color: var(--blue);
+        margin-left: 1rem;
       }
 
       &:nth-child(even) {
