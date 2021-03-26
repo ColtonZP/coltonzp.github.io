@@ -15,11 +15,9 @@ const AboutMe = () => (
           </span>
         </h2>
         <p>
-          I’m Colton, and I spend a lot of time with Front-end development. Coding has taken over my
-          life since writing my first line of code:{' '}
-          <code>console.log(&#34;Hello, World!&#34;)</code>. Since then I’ve worked hard to make the
-          internet a better place than when I found it. Everything I make has the goal of making
-          people&#39;s life easier in the vastly expanding digital age.
+          I&#39;m Colton, and I spend a lot of time in code. I work hard to make the internet a
+          better place than when I found it. I&#39;m seeking a full time position in web
+          development.
         </p>
         <a className="Download" href={colton_pemberton_resume} download>
           Download Resume
