@@ -1,11 +1,9 @@
 .aboutMe {
   & .blurb {
-    margin: var(--xl-spacing) 0;
-
     @media screen and (min-width: 640px) {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
-      grid-gap: var(--l-spacing);
+      grid-gap: var(--l-margin);
     }
 
     & .text {
@@ -22,6 +20,10 @@
 
     & span {
       margin-left: 1ch;
+    }
+
+    & p {
+      margin: var(--title-margin) 0;
     }
   }
 }

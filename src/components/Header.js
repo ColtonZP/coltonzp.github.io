@@ -9,7 +9,7 @@ export default function Header() {
           <h1>
             <b>Colton</b> Pemberton
           </h1>
-          <h2>Web developer from Seattle, Wa.</h2>
+          <p>Web developer from Seattle, Wa.</p>
         </div>
         <img src={spaceNeedle} alt="Space Needle" />
       </div>

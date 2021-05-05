@@ -9,12 +9,12 @@ const AboutMe = () => (
       <img className="worker" src={computer_work} alt="" />
 
       <div className="text">
-        <h2>
+        <h3>
           Hello, there!
           <span role="img" aria-label="wave">
             👋
           </span>
-        </h2>
+        </h3>
         <p>
           I&#39;m Colton, and I spend a lot of time in code. I work hard to make the internet a
           better place than when I found it. I&#39;m seeking a full time position in web

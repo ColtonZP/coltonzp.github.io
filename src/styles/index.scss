@@ -2,20 +2,14 @@
 
 :root {
   --blue: #35a7ff;
-  --yellow: #ffb86f;
-  --teal: #087e8b;
-  --green: #5dd39e;
-  --red: #d64045;
   --gray: #e0e0e0;
-  --xs-spacing: 5px;
-  --s-spacing: 10px;
-  --spacing: 10px;
-  --l-spacing: 40px;
-  --xl-spacing: 80px;
 
-  @media screen and (min-width: 540px) {
-    --spacing: 20px;
-  }
+  --margin: 1.25rem;
+  --l-margin: 2.5rem;
+  --container-margin: 7.5rem;
+  --title-margin: 3.5rem;
+
+  --padding: 0.625rem;
 }
 
 * {
@@ -24,7 +18,6 @@
   padding: 0;
   text-decoration: none;
   list-style: none;
-  font-size: 1em;
 }
 
 html,
@@ -32,6 +25,7 @@ body {
   padding: 0;
   margin: 0;
   font-family: 'Inter', Helvetica, sans-serif;
+  font-size: 16px;
 }
 
 h1,
@@ -49,22 +43,25 @@ h1 {
   font-weight: bold;
 }
 
-h2 {
+h2,
+h3 {
   font-size: 2.369rem;
   font-weight: 600;
 }
 
 h3 {
-  font-size: 1.777rem;
+  margin: var(--title-margin) 0;
 }
 
 h4,
 .cardTitle {
-  font-size: 1.333rem;
-  font-weight: 600;
+  font-size: 1.777rem;
 }
 
-p {
+h5,
+p,
+button {
+  font-size: 1rem;
   margin: 1em 0;
 }
 
@@ -80,10 +77,10 @@ input[type='submit'] {
   border: none;
   outline: none;
   transition: box-shadow linear 0.03s;
-  box-shadow: 5px 5px 10px var(--gray);
+  box-shadow: 4px 4px 10px var(--gray);
 
   &:active {
-    box-shadow: 3px 3px 3px var(--gray);
+    box-shadow: 2px 2px 5px var(--gray);
   }
 }
 
@@ -95,7 +92,7 @@ ul {
 .container {
   max-width: 1300px;
   margin: 0 auto;
-  padding: 0 var(--spacing);
+  padding: 0 var(--padding);
 }
 
 @import './_header.scss';

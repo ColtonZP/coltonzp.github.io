@@ -7,6 +7,8 @@
   overflow: hidden;
 
   & .container {
+    margin: 0 auto;
+
     @media screen and (min-width: 768px) {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
@@ -40,10 +42,12 @@
         }
       }
 
-      & h2 {
+      & p {
         font-weight: 400;
+        font-size: 2.369rem;
         z-index: 1;
         position: relative;
+        margin: 1rem 0;
       }
     }
   }
