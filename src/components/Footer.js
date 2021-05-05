@@ -1,7 +1,6 @@
 import React from 'react'
 
 import Contact from './Contact'
-import mail from '../images/mail.svg'
 import bottomWave from '../images/bottom_wave.svg'
 import github from '../images/github.svg'
 import linkedin from '../images/linkedin.svg'
@@ -15,7 +14,6 @@ function Footer() {
           <h2>Get in touch!</h2>
           <div className="contact">
             <Contact />
-            <img className="mail" src={mail} alt="mailing" />
           </div>
           <div className="links">
             <a href="https://github.com/ColtonZP" className="icon">
