@@ -14,6 +14,8 @@ footer {
 
   & .contact {
     & .contactForm {
+      position: relative;
+
       & .name,
       & .email,
       & .message {
@@ -22,41 +24,38 @@ footer {
         padding: var(--s-spacing);
         margin-bottom: var(--spacing);
         border: none;
-        border-bottom: solid 2px white;
+        border: solid 1px white;
         outline: none;
-        background: inherit;
-        font-family: Nunito, Helvetica, sans-serif;
+        background: white;
+        font-family: 'Inter', Helvetica, sans-serif;
+        color: black;
+        border-radius: 5px;
 
         &::placeholder {
-          color: white;
-          font-weight: bold;
+          color: black;
         }
 
         &:not(:placeholder-shown):invalid {
-          border: solid 1px red;
+          border-color: red;
         }
       }
 
       & .message {
-        background: white;
         resize: none;
         height: 350px;
-        border-radius: 5px;
-
-        &::placeholder {
-          color: var(--blue);
-        }
       }
 
       & input[type='submit'] {
         -webkit-appearance: none;
-        background: white;
-        color: var(--blue);
-        font-weight: bold;
-        box-shadow: 3px 3px 10px #444;
+        background: var(--blue);
+        color: white;
+        // box-shadow: 3px 3px 10px #444;
         cursor: pointer;
         font-size: 1rem;
-        font-family: Nunito, Helvetica, sans-serif;
+        position: absolute;
+        bottom: 20px;
+        right: 20px;
+        padding: 6px 20px;
       }
     }
   }
