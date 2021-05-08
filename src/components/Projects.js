@@ -1,13 +1,17 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect, useRef } from 'react'
 import Prismic from 'prismic-javascript'
 import { RichText } from 'prismic-reactjs'
 
 import { Client } from '../prismic-configuration'
+import { useOnScreenProjects } from '../useOnScreen'
 
 const Projects = () => {
   const [hidden, toggleHidden] = useState(false)
   const [projects, setProjects] = useState(null)
   const [archive, setArchive] = useState(null)
+
+  const projectsRef = useRef()
+  const isOnScreen = useOnScreenProjects(projectsRef)
 
   useEffect(() => {
     const fetchData = async () => {
@@ -23,8 +27,8 @@ const Projects = () => {
   }, [])
 
   return (
-    <div className="myWork container">
-      <h3>Projects</h3>
+    <div className="myWork container" style={{ opacity: isOnScreen ? 1 : 0 }}>
+      <h3 ref={projectsRef}>Projects</h3>
 
       <ul className="projects">
         {projects &&
