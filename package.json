@@ -1,6 +1,6 @@
 {
    "name": "coltonpemberton.com",
-   "version": "4.3.0",
+   "version": "5.0.0",
    "private": true,
    "dependencies": {
      "prismic-javascript": "^3.0.2",
