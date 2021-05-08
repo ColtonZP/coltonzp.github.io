@@ -2,9 +2,9 @@ import React, { useRef } from 'react'
 
 import spaceNeedle from '../images/space_needle.svg'
 import colton_pemberton_resume from '../content/colton_pemberton_resume.pdf'
-import { useOnScreenHeadline, useOnScreenImage, useOnScreenProjects } from '../useOnScreen'
+import { useOnScreenHeadline, useOnScreenImage } from '../useOnScreen'
 
-export default function Header({ scroll, bgPosY, spacePosY, posX, needleOpacity }) {
+export default function Header() {
   const name = useRef()
   const about = useRef()
   const isHeadline = useOnScreenHeadline(name, '-40%')
@@ -40,7 +40,7 @@ export default function Header({ scroll, bgPosY, spacePosY, posX, needleOpacity 
             </a>
           </div>
         </div>
-        <img src={spaceNeedle} alt="" style={{ top: spacePosY, left: isImage ? '70%' : '100%' }} />
+        <img src={spaceNeedle} alt="" style={{ left: isImage ? '70%' : '100%' }} />
       </div>
     </header>
   )
