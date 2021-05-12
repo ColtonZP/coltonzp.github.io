@@ -1,15 +1,28 @@
-import React, { useRef } from 'react'
+import React, { useState, useEffect, useRef } from 'react'
+import Prismic from 'prismic-javascript'
+import { Client } from '../prismic-configuration'
 
 import spaceNeedle from '../images/space_needle.svg'
-import colton_pemberton_resume from '../content/colton_pemberton_resume.pdf'
 import { useOnScreenHeadline, useOnScreenImage } from '../useOnScreen'
 
 export default function Header() {
+  const [resume, updateResume] = useState(null)
   const name = useRef()
   const about = useRef()
   const isHeadline = useOnScreenHeadline(name, '-40%')
   const isAbout = useOnScreenHeadline(about, '-40%')
   const isImage = useOnScreenImage(about, '-40%')
+
+  useEffect(() => {
+    const fetchData = async () => {
+      const response = await Client.query(Prismic.Predicates.at('document.type', 'file'))
+      if (response) {
+        updateResume(response.results[0].data.resume.url)
+        console.log(resume)
+      }
+    }
+    fetchData()
+  }, [])
 
   return (
     <header className="appHeader">
@@ -19,7 +32,7 @@ export default function Header() {
             <h1 ref={name}>
               Colton <b>Pemberton</b>
             </h1>
-            <p>Web developer from Seattle, Wa.</p>
+            <p>React.js developer from Seattle, Wa.</p>
           </div>
 
           <div className="about" style={{ opacity: isAbout ? 1 : 0 }}>
@@ -34,10 +47,11 @@ export default function Header() {
               better place than when I found it. I&#39;m seeking a full time position in web
               development.
             </p>
-
-            <a className="Download" href={colton_pemberton_resume} download>
-              Download Resume
-            </a>
+            {resume && (
+              <a className="Download" href={String(resume)} download>
+                Download Resume
+              </a>
+            )}
           </div>
         </div>
         <img src={spaceNeedle} alt="" style={{ left: isImage ? '70%' : '100%' }} />
