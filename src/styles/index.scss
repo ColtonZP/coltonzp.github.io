@@ -1,8 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
 
 :root {
-  --blue: #35a7ff;
-  --gray: #e0e0e0;
+  --blue: #55d6be;
+  --green: #7cea9c;
+  --gray: #808080;
 
   --margin: 1.25rem;
   --l-margin: 2.5rem;
@@ -46,7 +47,10 @@ h1 {
   font-weight: bold;
 }
 
-h2,
+h2 {
+  font-size: 4.209rem;
+}
+
 h3 {
   font-size: 2.369rem;
   font-weight: 600;
@@ -74,17 +78,11 @@ input[type='submit'] {
   display: inline-block;
   background-color: var(--blue);
   padding: 4px 14px;
-  border-radius: 20px;
+  border-radius: 5px;
   color: white;
   cursor: pointer;
   border: none;
   outline: none;
-  transition: box-shadow linear 0.03s;
-  box-shadow: 4px 4px 10px var(--gray);
-
-  &:active {
-    box-shadow: 2px 2px 5px var(--gray);
-  }
 }
 
 ul {
