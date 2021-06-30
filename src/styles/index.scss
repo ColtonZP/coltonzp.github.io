@@ -56,14 +56,10 @@ h2 {
 h3 {
   font-size: 2.369rem;
   font-weight: 600;
-}
-
-h3 {
   margin: var(--title-margin) 0;
 }
 
-h4,
-.cardTitle {
+h4 {
   font-size: 1.777rem;
 }
 
@@ -78,13 +74,13 @@ button,
 a,
 input[type='submit'] {
   display: inline-block;
-  background-color: var(--blue);
-  padding: 4px 14px;
   border-radius: 5px;
-  color: white;
   cursor: pointer;
-  border: none;
   outline: none;
+  background-color: var(--blue);
+  color: white;
+  padding: 0.4em 0.8em;
+  position: relative;
 }
 
 ul {

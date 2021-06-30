@@ -38,11 +38,10 @@
     }
 
     & a {
-      background-color: transparent;
+      padding: 0.8em;
+      background: inherit;
       color: var(--blue);
       border: 1px var(--blue) solid;
-      padding: 0.8em;
-      position: relative;
 
       &:hover:after {
         width: 100%;

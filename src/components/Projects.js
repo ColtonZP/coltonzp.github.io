@@ -37,8 +37,6 @@ export function Projects() {
                                 <div className="tags">{RichText.render(site.data.tags)}</div>
                             </div>
 
-                            <RichText render={site.data.description} />
-
                             <div className="links">
                                 <a target="_blank" rel="noopener noreferrer" href={site.data.live.url}>
                                     Live
@@ -47,6 +45,8 @@ export function Projects() {
                                     Source
                                 </a>
                             </div>
+
+                            <RichText render={site.data.description} />
                         </li>
                     ))}
             </ul>
