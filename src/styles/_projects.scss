@@ -142,44 +142,36 @@
 
   & .show-more {
     display: block;
-    margin: var(--title-margin) auto;
-    background: none;
-    box-shadow: none;
+    margin: 1rem auto;
+    padding: 0.8em;
+    background: inherit;
     color: var(--blue);
+    border: 1px var(--blue) solid;
     font-weight: bold;
   }
 
   & .archive {
-    border: var(--gray) solid 2px;
-    border-radius: 10px;
     overflow: hidden;
+    color: var(--blue);
 
     & li {
       display: flex;
       align-items: center;
-      padding: var(--padding);
+      border-bottom: 1px var(--blue) solid;
+
+      &:last-child {
+        border: none;
+      }
 
       & .title {
         flex-grow: 1;
-        margin: 0;
-        padding: 0;
-        color: black;
-      }
-
-      & a,
-      & .title {
-        padding: 0;
-        background: none;
-        box-shadow: none;
+        font-weight: bold;
       }
 
       & a {
         color: var(--blue);
-        margin-left: 1rem;
-      }
-
-      &:nth-child(even) {
-        background: var(--gray);
+        margin-left: .5rem;
+        background: inherit;
       }
     }
   }
