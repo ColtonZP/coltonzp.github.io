@@ -42,6 +42,25 @@
       color: var(--blue);
       border: 1px var(--blue) solid;
       padding: 0.8em;
+      position: relative;
+
+      &:hover:after {
+        width: 100%;
+      }
+
+      &:after {
+        display: block;
+        width: 0;
+        content: '';
+        height: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        background: var(--blue);
+        opacity: .2;
+        border-radius: 2px;
+        transition: width .4s ease-in-out;
+      }
     }
   }
 }
