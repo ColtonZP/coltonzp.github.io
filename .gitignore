@@ -5,7 +5,7 @@
 /.pnp
 .pnp.js
 .prettierrc
-.eslintrc.js
+.eslintrc.json
 .eslintcache
 
 # testing

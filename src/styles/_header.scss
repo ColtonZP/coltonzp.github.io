@@ -1,16 +1,9 @@
 .appHeader {
   width: 100vw;
   background: url('../images/top_wave.svg') top right/100% no-repeat;
-  // background-attachment: fixed;
-  // background-color: transparent;
   position: relative;
-  transform: all 0.3s ease;
 
   & .container {
-    // @media screen and (min-width: 768px) {
-    //   display: grid;
-    //   grid-template-columns: repeat(3, 1fr);
-    // }
 
     position: relative;
 
