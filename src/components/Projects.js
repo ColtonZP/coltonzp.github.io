@@ -24,16 +24,20 @@ export function Projects() {
     }, [])
 
     return (
-        <div className="myWork container">
+        <div className="my-work container">
             <h3>Projects</h3>
 
             <ul className="projects">
                 {projects &&
                     projects.map(site => (
-                        <li key={RichText.asText(site.data.name)}>
-                            <h4>{RichText.asText(site.data.name)}</h4>
+                        <li className="project" key={RichText.asText(site.data.name)}>
+                            <div className="image-overlay">
+                                <h4>{RichText.asText(site.data.name)}</h4>
+                                <img src={site.data.image.url} alt={RichText.asText(site.data.name)} />
+                                <div className="tags">{RichText.render(site.data.tags)}</div>
+                            </div>
 
-                            <img src={site.data.image.url} alt={RichText.asText(site.data.name)} />
+                            <RichText render={site.data.description} />
 
                             <div className="links">
                                 <a target="_blank" rel="noopener noreferrer" href={site.data.live.url}>
@@ -43,15 +47,11 @@ export function Projects() {
                                     Source
                                 </a>
                             </div>
-
-                            <div className="tags">{RichText.render(site.data.tags)}</div>
-
-                            <RichText render={site.data.description} />
                         </li>
                     ))}
             </ul>
 
-            <button className="showMore" onClick={() => toggleHidden(!hidden)} type="button">
+            <button className="show-more" onClick={() => toggleHidden(!hidden)} type="button">
                 {hidden ? 'hide archive -' : 'view archive +'}
             </button>
 

@@ -4,6 +4,8 @@
   --blue: #55d6be;
   --green: #7cea9c;
   --gray: #808080;
+  --purple: #9067C6;
+  --red: #F71735;
 
   --margin: 1.25rem;
   --l-margin: 2.5rem;
@@ -91,9 +93,9 @@ ul {
 }
 
 .container {
-  max-width: 1300px;
+  max-width: 1500px;
+  width: 90%;
   margin: 0 auto;
-  padding: 0 var(--padding);
 }
 
 @import './_header.scss';
