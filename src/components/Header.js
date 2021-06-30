@@ -13,7 +13,7 @@ export function Header() {
                     development.
                 </p>
 
-                <a>Get in touch</a>
+                <a href="mailto: colton@coltonpemberton.com?subject=Contact from coltonpemberton.com">Get in touch</a>
             </div>
         </header>
     )

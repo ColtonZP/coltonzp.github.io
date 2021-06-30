@@ -1,77 +1,15 @@
 footer {
   margin-top: var(--container-margin);
 
-  & .wave {
-    position: relative;
-    width: 100%;
-    top: 8px;
-  }
-
-  & h3 {
-    color: white;
-    margin-top: 0;
-  }
-
-  & .contact {
-    & .contactForm {
-      position: relative;
-
-      & .name,
-      & .email,
-      & .message {
-        -webkit-appearance: none;
-        font-family: 'Inter', Helvetica, sans-serif;
-        font-size: 1rem;
-        display: block;
-        width: 100%;
-        padding: var(--padding);
-        margin-bottom: var(--margin);
-        border: none;
-        border: solid 1px white;
-        outline: none;
-        background: white;
-        color: black;
-        border-radius: 5px;
-
-        &::placeholder {
-          color: black;
-        }
-
-        &:not(:placeholder-shown):invalid {
-          border-color: red;
-        }
-      }
-
-      & .message {
-        resize: none;
-        height: 350px;
-      }
-
-      & input[type='submit'] {
-        -webkit-appearance: none;
-        font-family: 'Inter', Helvetica, sans-serif;
-        background: var(--blue);
-        color: white;
-        cursor: pointer;
-        font-size: 1rem;
-        position: absolute;
-        bottom: 20px;
-        right: 20px;
-        padding: 6px 20px;
-      }
-    }
-  }
-
   & .content {
     background: var(--blue);
-    padding-top: var(--title-margin);
   }
 
   & .links {
     text-align: center;
 
     & .icon {
-      margin: var(--title-margin) var(--margin);
+      margin: 3rem 1rem;
       background: none;
       vertical-align: middle;
       padding: 0;
